@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="scroll-smooth" data-theme="retro" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -44,7 +44,7 @@
 
     <!-- Back-to-top Button start -->
     <button onclick="topFunction()" id="back-to-top"
-        class="fixed hover:cursor-pointer hover:scale-105 rounded z-10 bottom-5 end-5 px-1.5 text-xl text-center bg-gradient-to-b from-[#FFCD03] to-[#ffcf0e] text-white leading-8 transition-all duration-500 block ">
+        class="fixed hover:cursor-pointer hover:scale-105 rounded z-10 bottom-5 end-5 px-1.5 text-xl text-center bg-gradient-to-b from-[#009341] to-[#7FAE41] text-white leading-8 transition-all duration-500 block ">
         <span class="fa-solid fa-angle-up text-2xl/none"></span>
     </button>
     <!-- Back-to-top Button end -->

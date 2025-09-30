@@ -29,12 +29,12 @@ window.onscroll = function () {
     scrollFunction();
     const navbar = document.getElementById("navbar");
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        navbar.classList.add("bg-[#48b958]");
+        navbar.classList.add("bg-[#f5fdff]");
         navbar.classList.add("top-0");
         navbar.classList.remove("bg-transparent");
     } else {
         navbar.classList.add("bg-transparent");
-        navbar.classList.remove("bg-[#48b958]");
+        navbar.classList.remove("bg-[#f5fdff]");
         navbar.classList.remove("top-0");
     }
 };

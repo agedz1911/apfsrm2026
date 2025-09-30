@@ -1,13 +1,13 @@
 <!-- Header -->
-<header class="bg-gradient-to-r from-[#009341] via-[#e0e002] to-[#009341] hidden lg:block text-white text-sm py-2">
+<header class="bg-gradient-to-r from-[#009341] via-[#7FAE41] to-[#C9D838] hidden lg:block text-white text-sm py-2">
     <div class="mx-auto flex justify-between items-center px-4">
         <div>
             <span>
                 More Information <i class="fa fa-angle-right text-xs"></i>
             </span>
             <span class="ml-4 hover:underline">
-                <a href="mailto:burn2025@pharma-pro.com">
-                    burn2025@pharma-pro.com
+                <a href="mailto:apfsrm2026bali@pharma-pro.com">
+                    apfsrm2026bali@pharma-pro.com
                 </a>
             </span>
         </div>
@@ -15,7 +15,7 @@
             <span class="text-xs">
                 Contact Us On:
             </span>
-            <a class="btn btn-sm shadow-none" href="mailto:burn2025@pharma-pro.com">
+            <a class="btn btn-sm shadow-none" href="mailto:apfsrm2026bali@pharma-pro.com">
                 <i class="fa fa-envelope">
                 </i>
             </a>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="navbar-end">
                     <div onclick="contact.showModal()"
-                        class="btn lg:btn-outline rounded-lg lg:border-white lg:text-white/80 lg:hover:text-gray-900 shadow-none">
+                        class="btn btn-outline rounded-lg btn-success shadow-none">
                         <i class="fa-solid fa-circle-info"></i>
                         Contact
                     </div>

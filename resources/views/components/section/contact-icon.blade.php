@@ -1,15 +1,15 @@
 <div class="flex flex-col items-center">
     <div class="stats stats-vertical lg:stats-horizontal shadow w-full max-w-xl">
         <div class="stat">
-            <div class="stat-figure text-[#0059A8]">
+            <div class="stat-figure text-[#0A192F]">
                 <i class="fa fa-user inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Secretariat</div>
-            <div class="stat-desc">Ms. Selvi / Ms. Isma</div>
+            <div class="stat-desc">Ms. Silvia</div>
         </div>
 
         <div class="stat">
-            <div class="stat-figure text-[#0059A8]">
+            <div class="stat-figure text-[#0A192F]">
                 <i class="fa fa-location-dot inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Address</div>
@@ -20,7 +20,7 @@
 
     <div class="stats stats-vertical lg:stats-horizontal shadow">
         <div class="stat">
-            <div class="stat-figure text-[#0059A8]">
+            <div class="stat-figure text-[#0A192F]">
                 <i class="fa fa-phone inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Call</div>
@@ -28,11 +28,11 @@
         </div>
 
         <div class="stat">
-            <div class="stat-figure text-[#0059A8]">
+            <div class="stat-figure text-[#0A192F]">
                 <i class="fa fa-envelope inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Email</div>
-            <div class="stat-desc hover:underline hover:text-primary"><a href="mailto:burn2025@pharma-pro.com">burn2025@pharma-pro.com</a></div>
+            <div class="stat-desc hover:underline hover:text-primary"><a href="mailto:apfsrm2026bali@pharma-pro.com">apfsrm2026bali@pharma-pro.com</a></div>
         </div>
 
         <div class="stat">
