@@ -1,8 +1,8 @@
 <div class="w-full">
     <section class="breadcrumbs relative pb-0">
-    <div class="absolute inset-0 bg-gradient-to-b from-[#0059A8]/10 to-[#0059A8]/80"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#D2E6F7FF]/10 to-[#0A3542]/80"></div>
         <div class="py-16 lg:py-28 text-center relative">
-            <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Faculties</h2>
+            <h2 class="text-[#0A3542] uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Faculties</h2>
         </div>
     </section>
 
@@ -19,7 +19,7 @@
                 <!-- name of each tab group should be unique -->
                 <div class="tabs tabs-border justify-evenly">
                     <input type="radio" name="my_tabs_2"
-                        class="tab uppercase tracking-wider text-lg text-sky-700 hover:text-[#E2B124]"
+                        class="tab uppercase tracking-wider text-lg text-[#0a3542] hover:text-[#009341]"
                         aria-label="Indonesian Faculties" checked="checked" />
                     <div class="tab-content border-base-300 bg-sky-50 p-5 rounded-lg">
                         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -30,13 +30,13 @@
                                         assets/images/speaker.png"}}" alt="{{$indo->name}}"
                                         class="w-full h-full object-cover rounded">
                                     <button onclick="my_modal_{{$loop->index}}.showModal()"
-                                        class="btn bg-sky-700 text-white hover:bg-[#FFCD03] btn-xs rounded-xl absolute right-0 top-1">
+                                        class="btn bg-green-300 text-slate-900 hover:bg-[#009341] btn-xs rounded-xl absolute right-0 top-1">
                                         <i class="fa fa-info-circle text-green-400"></i> Read more..
                                     </button>
                                 </figure>
                                 <div class="card-body text-center pt-2">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-amber-500 hover:text-sky-700 hover:cursor-pointer">
+                                        class="text-xl font-semibold text-green-600 hover:text-[#0a3542] hover:cursor-pointer">
                                         {{$indo->name}}
                                     </h2>
                                     <p>{{$indo->description}}</p>
@@ -51,12 +51,12 @@
                                             class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
                                     <div class="flex items-center gap-3 pb-3">
-                                        <img class="rounded-full bg-sky-700/20 shadow w-20 object-cover"
+                                        <img class="rounded-full bg-green-300/20 shslatext-slate-900w-20 object-cover"
                                             src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                             assets/images/speaker.png"}}" alt="{{$indo->name}}">
                                         <div>
                                             <p class="mb-0"><span
-                                                    class="text-amber-500 text-lg font-semibold">{{$indo->name}}</span>
+                                                    class="text-green-600 text-lg font-semibold">{{$indo->name}}</span>
                                                 <br>
                                                 {{$indo->country}}
                                             </p>
@@ -96,7 +96,7 @@
                     </div>
 
                     <input type="radio" name="my_tabs_2"
-                        class="tab uppercase tracking-wider  text-lg text-sky-700 hover:text-[#E2B124]"
+                        class="tab uppercase tracking-wider  text-lg text-[#0a3542] hover:text-[#009341]"
                         aria-label="Foreign faculties" />
                     <div class="tab-content border-base-300 bg-sky-50 p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
@@ -108,13 +108,13 @@
                                         assets/images/speaker.png"}}" alt="{{$foreign->name}}"
                                         class="w-full h-full object-cover rounded">
                                     <button onclick="my_modal_f{{$loop->index}}.showModal()"
-                                        class="btn bg-sky-700 text-white hover:bg-[#FFCD03] btn-xs rounded-xl absolute right-0 top-1">
+                                        class="btn bg-green-300 text-slate-900 hover:bg-[#009341] btn-xs rounded-xl absolute right-0 top-1">
                                         <i class="fa fa-info-circle text-green-400"></i> Read more..
                                     </button>
                                 </figure>
                                 <div class="card-body text-center pt-2">
                                     <h2 onclick="my_modal_f{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-amber-500 hover:cursor-pointer hover:text-sky-700">
+                                        class="text-xl font-semibold text-green-600 hover:cursor-pointer hover:text-[#0a3542]">
                                         {{$foreign->name}}
                                     </h2>
                                     <p>{{$foreign->country}}</p>
@@ -128,12 +128,12 @@
                                             class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
                                     <div class="flex items-center gap-3 pb-3">
-                                        <img class="rounded-full bg-sky-700/20 shadow w-20 object-cover"
+                                        <img class="rounded-full bg-green-300/20 shslatext-slate-900w-20 object-cover"
                                             src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
                                             assets/images/speaker.png"}}" alt="{{$foreign->name}}">
                                         <div>
                                             <p class="mb-0"><span
-                                                    class="text-amber-500 text-lg font-semibold">{{$foreign->name}}</span>
+                                                    class="text-green-600 text-lg font-semibold">{{$foreign->name}}</span>
                                                 <br>
                                                 {{$foreign->country}}
                                             </p>

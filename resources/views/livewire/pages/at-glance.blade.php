@@ -1,8 +1,8 @@
 <div class="w-full">
     <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#0059A8]/10 to-[#0059A8]/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#D2E6F7FF]/10 to-[#0A3542]/80"></div>
         <div class="py-16 lg:py-28 text-center relative">
-            <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Program at Glance</h2>
+            <h2 class="text-[#0A3542] uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Program at Glance</h2>
         </div>
     </section>
 
@@ -10,8 +10,8 @@
         <!-- name of each tab group should be unique -->
         <div class="tabs tabs-border justify-evenly">
             <input type="radio" name="my_tabs_2" checked="checked"
-                class="tab uppercase tracking-wider text-primary hover:text-[#0059A8]"
-                aria-label="Thursday, 20 November 2025" />
+                class="tab uppercase tracking-wider text-green-600 hover:text-[#0A3542]"
+                aria-label="Thursday, 16 April 2026" />
             <div class="tab-content">
                 <div class="overflow-x-auto  rounded-box border border-base-content/5 bg-base-100 border-gray-300">
                     <table class="table table-sm">
@@ -20,7 +20,7 @@
                             <tr>
                                 <th colspan="3" class="text-center bg-base-200">WORKSHOPS</th>
                             </tr>
-                            {{-- <tr class="text-primary bg-base-200 text-xs">
+                            {{-- <tr class="text-green-600 bg-base-200 text-xs">
                                 <th style="width: 33%;" class="text-center">Empire 3</th>
                                 <th style="width: 33%;" class="text-center">Empire 4</th>
                                 <th style="width: 33%;" class="text-center">Pasteur Convention Center 3</th>
@@ -241,8 +241,8 @@
                 </div>
             </div>
 
-            <input type="radio" name="my_tabs_2" class="tab uppercase tracking-wider text-primary hover:text-[#0059A8]"
-                aria-label="Friday, 21 November 2025" />
+            <input type="radio" name="my_tabs_2" class="tab uppercase tracking-wider text-green-600 hover:text-[#0A3542]"
+                aria-label="Friday, 17 April 2026" />
             <div class="tab-content">
                 <div class="overflow-x-auto  rounded-box border border-base-content/5 bg-base-100 border-gray-300">
                     <table class="table table-sm">
@@ -251,7 +251,7 @@
                             <tr>
                                 <th colspan="3" class="text-center bg-base-200">CONFERENCE DAY 1</th>
                             </tr>
-                            {{-- <tr class="text-primary bg-base-200 text-xs">
+                            {{-- <tr class="text-green-600 bg-base-200 text-xs">
                                 <th style="width: 33%;" class="text-center">Pasteur Convention Center 1 & 2</th>
                                 <th style="width: 33%;" class="text-center">Pasteur Convention Center 3</th>
                                 <th style="width: 33%;" class="text-center">Empire 5</th>
@@ -473,8 +473,8 @@
                 </div>
             </div>
 
-            <input type="radio" name="my_tabs_2" class="tab uppercase tracking-wider text-primary hover:text-[#0059A8]"
-                aria-label="Saturday, 22 November  2025" />
+            <input type="radio" name="my_tabs_2" class="tab uppercase tracking-wider text-green-600 hover:text-[#0A3542]"
+                aria-label="Saturday, 18 April 2026" />
             <div class="tab-content ">
                 <div class="overflow-x-auto  rounded-box border border-base-content/5 bg-base-100 border-gray-300">
                     <table class="table table-sm">
@@ -483,7 +483,7 @@
                             <tr>
                                 <th colspan="3" class="text-center bg-base-200">CONFERENCE DAY 2</th>
                             </tr>
-                            {{-- <tr class="text-primary bg-base-200 text-xs">
+                            {{-- <tr class="text-green-600 bg-base-200 text-xs">
                                 <th style="width: 33%;" class="text-center">Pasteur Convention Center 1 & 2</th>
                                 <th style="width: 33%;" class="text-center">Pasteur Convention Center 3</th>
                                 <th style="width: 33%;" class="text-center">Empire 5</th>

@@ -49,12 +49,12 @@
             </div>
             <div class="pb-10 mt-4">
                 <ul class="p-0 m-0 flex flex-row flex-wrap gap-4 lg:gap-6 justify-center">
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a href="#" wire:navigate>Submission</a></li>
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a href="/organizing-committee" wire:navigate>Committee</a></li>
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="/faculties">Faculties</a></li>
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="/program-at-glance">Schedule</a></li>
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="/registration">Registration</a></li>
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="#">Venue</a></li>
+                    <li class="text-sm font-normal hover:text-green-600 hover:underline"><a href="#" wire:navigate>Submission</a></li>
+                    <li class="text-sm font-normal hover:text-green-600 hover:underline"><a href="/organizing-committee" wire:navigate>Committee</a></li>
+                    <li class="text-sm font-normal hover:text-green-600 hover:underline"><a wire:navigate href="/faculties">Faculties</a></li>
+                    <li class="text-sm font-normal hover:text-green-600 hover:underline"><a wire:navigate href="/program-at-glance">Schedule</a></li>
+                    <li class="text-sm font-normal hover:text-green-600 hover:underline"><a wire:navigate href="/registration">Registration</a></li>
+                    <li class="text-sm font-normal hover:text-green-600 hover:underline"><a wire:navigate href="#">Venue</a></li>
                 </ul>
             </div>
         </div>

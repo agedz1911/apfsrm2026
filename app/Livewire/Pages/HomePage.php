@@ -8,7 +8,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-#[Title('Indonesian Burn & wound care meeting in conjuntion with 7th updates in plastic surgery ')]
+#[Title('Asian Pacific Federation of Societies for Reconstructive Microsurgery')]
 class HomePage extends Component
 {
     public function render()

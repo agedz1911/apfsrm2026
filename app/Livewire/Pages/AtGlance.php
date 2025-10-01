@@ -8,7 +8,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-#[Title('Program at Glance - Burn 2025')]
+#[Title('APFSRM - Program at Glance')]
 class AtGlance extends Component
 {
     public $atglances;

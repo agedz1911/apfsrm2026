@@ -1,15 +1,12 @@
 <div>
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
-        </div>
-        <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Sponsors</h2>
-            </div>
+    <section class="breadcrumbs relative pb-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#D2E6F7FF]/10 to-[#0A3542]/80"></div>
+        <div class="py-16 lg:py-28 text-center relative">
+            <h2 class="text-[#0A3542] uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Sponsors</h2>
         </div>
     </section>
 
-    <section class="partners">
+    <section class="pt-10 pb-24 px-2 lg:px-5 bg-competition">
         @foreach ($sponsors as $sponsor)
         <div class="container border-dashed-bottom-2 py-8">
             <div class="partner-inner">

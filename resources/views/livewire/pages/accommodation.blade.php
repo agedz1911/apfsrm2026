@@ -1,14 +1,14 @@
 <div class="w-full">
     <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#0059A8]/10 to-[#0059A8]/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#D2E6F7FF]/10 to-[#0A3542]/80"></div>
         <div class="py-16 lg:py-28 text-center relative">
-            <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Accommodation</h2>
+            <h2 class="text-[#0A3542] uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Accommodation</h2>
         </div>
     </section>
 
     <section class="pt-10 pb-24 px-2 lg:px-5">
         <div class="text-center md:text-start mb-5">
-            <h2 class="mb-3 uppercase text-4xl tracking-wide font-bold">Hotel <span class="text-amber-400">Reservation</span></h2>
+            <h2 class="mb-3 uppercase text-4xl tracking-wide font-bold">Hotel <span class="text-green-600">Reservation</span></h2>
             <p class="text-gray-500">The organizers of the ... congress have secured competitive rates at a variety of
                 hotels near the Venue to accommodate delegates
                 with different budgets and preferences. Hotel reservations will open and are subject
@@ -23,7 +23,7 @@
                     <div class="mb-3 relative p-3">
                         {{-- menampilkan string HTML --}}
                         {!! $accommodation->tag ? '<span
-                            class="absolute top-1 right-4 translate-y-5 bg-blue-700 rounded-xl text-white px-3 py-1">
+                            class="absolute top-1 right-4 translate-y-5 bg-green-700 rounded-xl text-white px-3 py-1">
                             <p class="text-xs">' . $accommodation->tag . '</p>
                         </span>' : " " !!}
                         <a href="javascript:void(0)"><img
@@ -34,7 +34,7 @@
                         <h6 class="pb-2 mb-3 text-xl font-semibold">{{$accommodation->hotel_name}}</h6>
                         <div class="flex justify-center mb-3">
                             @for ($i = 1; $i <= 5; $i++) @if ($i <=$accommodation->hotel_star)
-                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-green-600"></i>
                                 @else
                                 <i class="fa-solid fa-star"></i>
                                 @endif
@@ -58,9 +58,9 @@
                     </div>
                     <div class="flex justify-evenly">
                         <a href="{{$accommodation->url ? $accommodation->url : 'javascript:void(0)'}}"
-                            class="bg-sky-700 py-3 rounded-2xl font-semibold text-white hover:bg-amber-500 ease-out duration-100 px-6">Book Now</a>
+                            class="bg-green-700 py-3 rounded-2xl font-semibold text-white hover:bg-green-600 ease-out duration-100 px-6">Book Now</a>
                         <a href="{{$accommodation->direction ? $accommodation->direction : 'javascript:void(0)'}}"
-                            class="bg-transparent py-3 rounded-2xl font-semibold text-sky-900 hover:bg-amber-500 ease-out duration-100 hover:text-white px-6"><i class="fa-solid fa-location-dot mx-1"></i>Direction</a>
+                            class="bg-transparent py-3 rounded-2xl font-semibold text-green-900 hover:bg-green-600 ease-out duration-100 hover:text-white px-6"><i class="fa-solid fa-location-dot mx-1"></i>Direction</a>
                     </div>
                 </div>
             </div>

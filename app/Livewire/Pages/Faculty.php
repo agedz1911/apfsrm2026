@@ -8,7 +8,7 @@ use Livewire\Component;
 use Livewire\WithoutUrlPagination;
 use Livewire\WithPagination;
 
-#[Title('Faculties - Burn 2025')]
+#[Title('APFSRM - Faculties')]
 class Faculty extends Component
 {
     use WithPagination, WithoutUrlPagination;
