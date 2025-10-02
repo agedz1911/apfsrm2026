@@ -7,15 +7,16 @@
                 <img src="assets/images/banner.png" class="w-full max-w-md rounded-xl" alt="Banner">
             </div>
             <div class="px-5 order-1 lg:order-2">
-                <img src="assets/images/logo/logo-event.png" class="w-full max-w-md rounded-xl" alt="Banner">
+                <img src="assets/images/logo/logo-event.png" class="w-full max-w-sm rounded-xl" alt="Banner">
                 <div class="flex text-start w-fit relative">
-                    <h1 class="text-2xl lg:text-4xl text-[#3a525e]  font-bold">Asian Pacific Federation of
-                        Societies for
-                        <br><span class="text-[#0A3542] ">Reconstructive Microsurgery</span>
+                    <h1 class="text-lg lg:text-xl text-[#002c27] font-bold">
+                        The 7<sup>th</sup> Congress of APFSRM <br> (Asia Pacific Federation of <br> Societies of Reconstructive Microsurgery) <br> <span class="italic font-normal text-[#0A3542]"> In Conjunction with </span><br>
+                        <span class="text-[#002c27] ">The 1<sup>st</sup> Congress of InaSREM <br> (Indonesian Society of Reconstructive Microsurgery)</span>
                     </h1>
                 </div>
-                <p class="text-slate-300 mt-4">
-                    April 16<sup>th</sup> - 18<sup>nd</sup>, 2026 <br> Bali Nusa Dua Convention Center (BNDCC 2), Bali,
+                <p class="italic mt-3 text-slate-300 font-semibold">" Learning Leap to Help Patients: Inspire and Be Inspired "</p>
+                <p class="text-slate-300 mt-3">
+                    April 16<sup>th</sup> - 18<sup>th</sup>, 2026 <br> Bali Nusa Dua Convention Center (BNDCC 2), Bali,
                     Indonesia</p>
                 <div class="mt-10">
                     <button
@@ -40,13 +41,13 @@
         class="lg:py-16 py-20 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3 border-b border-dashed border-gray-300">
         <div class="order-1 lg:order-2 px-3 lg:px-8">
             <div class="flex text-start w-fit relative">
-                <img src="assets/images/logo/logo-event.png" alt="Icon" class="w-full max-w-sm">
+                <img src="assets/images/logo/logo-event.png" alt="Icon" class="lg:w-50 w-28">
                 <img src="assets/images/logo/logo.png"
-                    class="rounded-lg w-full max-w-sm hover:scale-105 transition-all duration-500" alt="">
+                    class="rounded-lg w-20 lg:w-40 hover:scale-105 transition-all duration-500" alt="">
             </div>
-            <h1 class="text-2xl lg:text-4xl text-[#3a525e]  font-bold">Asian Pacific Federation of
-                Societies for
-                <br><span class="text-[#0A3542] ">Reconstructive Microsurgery</span>
+            <h1 class="text-lg lg:text-xl text-[#3a525e]  font-bold">
+                The 7<sup>th</sup> Congress of APFSRM <br> (Asia Pacific Federation of Societies of Reconstructive Microsurgery) <br> <span class="italic"> In Conjunction with </span><br>
+                <span class="text-[#0A3542] ">The 1<sup>st</sup> Congress of InaSREM <br> (Indonesian Society of Reconstructive Microsurgery)</span>
             </h1>
 
             <div class="flex flex-col md:flex-row lg:justify-start justify-center items-center gap-3 mt-8">

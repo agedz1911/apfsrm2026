@@ -19,8 +19,8 @@
                     Jakarta 10130, Indonesia</p>
                 <div class="py-5 mt-3">
                     <ul class="m-0 p-0 flex flex-row gap-5 lg:gap-8 justify-center">
-                        <li class="bg-green-600 rounded-md p-2 w-10 hover:bg-green-100 tooltip-bottom tooltip" data-tip="burn2025@pharma-pro.com">
-                            <a href="mailto:burn2025@pharma-pro.com" class="text-white hover:text-green-800">
+                        <li class="bg-green-600 rounded-md p-2 w-10 hover:bg-green-100 tooltip-bottom tooltip" data-tip="apfsrm2026bali@pharma-pro.com">
+                            <a href="mailto:apfsrm2026bali@pharma-pro.com" class="text-white hover:text-green-800">
                                 <i class="fa-solid fa-envelope-open-text text-xl"></i>
                             </a>
                         </li>
@@ -29,13 +29,13 @@
                                 <i class="fa fa-phone text-xl"></i>
                             </a>
                         </li>
-                        <li class="bg-green-600 rounded-md p-2 w-10 hover:bg-green-100 tooltip-bottom tooltip" data-tip="+62 851-7992-4961">
-                            <a href="tel:+6285179924961" class="text-white hover:text-green-800">
+                        <li class="bg-green-600 rounded-md p-2 w-10 hover:bg-green-100 tooltip-bottom tooltip" data-tip="+62 816-995-230">
+                            <a href="tel:+62816995230" class="text-white hover:text-green-800">
                                 <i class="fa fa-mobile-screen text-xl"></i>
                             </a>
                         </li>
-                        <li class="bg-green-600 rounded-md p-2 w-10 hover:bg-green-100 tooltip-bottom tooltip" data-tip="+62 851-7992-4961">
-                            <a href="https://wa.me/+6285179924961" class="text-white hover:text-green-800">
+                        <li class="bg-green-600 rounded-md p-2 w-10 hover:bg-green-100 tooltip-bottom tooltip" data-tip="+62 816-995-230">
+                            <a href="https://wa.me/+62816995230" class="text-white hover:text-green-800">
                                 <i class="fa fa-whatsapp text-xl"></i>
                             </a>
                         </li>

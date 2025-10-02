@@ -19,7 +19,7 @@
                 <i class="fa fa-envelope">
                 </i>
             </a>
-            <a class="btn btn-sm shadow-none" href="https://wa.me/+6285179924961" target="_blankx`">
+            <a class="btn btn-sm shadow-none" href="https://wa.me/+62816995230" target="_blankx`">
                 <i class="fa fa-whatsapp text-green-600">
                 </i>
             </a>

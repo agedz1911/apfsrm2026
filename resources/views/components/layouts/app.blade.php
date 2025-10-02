@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" data-theme="retro" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="scroll-smooth" data-theme="corporate" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'BURN 2025' }}</title>
+    <title>{{ $title ?? 'APFSRM 2026' }}</title>
     <meta name="description"
-        content="Indonesian Burn & wound care meeting in conjuntion with 7th updates in plastic surgery " />
-    <meta name="keywords" content="plastic surgery, burn, wound care, aesthetic, reconstructive, beauty, aesthetic education," />
+        content="The 7th Congress of APFSRM (Asia Pacific Federation of Societies of Reconstructive Microsurgery) In Conjunction with The 1st Congress of InaSREM (Indonesian Society of Reconstructive Microsurgery)" />
+    <meta name="keywords" content="Plastic surgeon, Orthopedist, Neurosurgeon, Oral surgeon, Urologist, Oncologist, Thoracic, Cardiac & Vascular surgeon, General surgeons and others" />
     <meta name="author" content="AV-PRO" />
 
     <!-- Custom CSS -->
@@ -27,7 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- theme daisyui -->
-    {{--<link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" /> --}}
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" />
     {{-- @vite(['resources/css/app.css','resources/js/app.js']) --}}
 
 </head>

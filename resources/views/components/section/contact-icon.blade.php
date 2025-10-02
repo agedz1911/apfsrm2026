@@ -41,8 +41,8 @@
             </div>
             <div class="stat-title font-semibold">Whatsapp</div>
             <div class="stat-desc">
-                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+6285179924961"> +62 851-7992-4961 (Selvi) </a> <br>
-                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+6285215510055"> +62 852-1551-0055 (Isma) </a>
+                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+62816995230"> +62 816-995-230 (Silvia) </a> <br>
+                <!-- <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+6285215510055"> +62 852-1551-0055 (Isma) </a> -->
             </div>
         </div>
         <div class="stat">
@@ -53,7 +53,6 @@
             <div class="stat-desc">
                 @ig
             </div>
-
 
         </div>
     </div>

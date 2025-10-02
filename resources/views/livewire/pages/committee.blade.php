@@ -10,16 +10,16 @@
     <section class="mx-auto w-full px-5 pt-16 pb-28 bg-competition">
         <div class="flex flex-wrap gap-4 justify-evenly">
             @foreach ($uniqueCategories as $category)
-            <div class="card shadow-sm w-full max-w-md">
+            <div class="card shadow-sm w-full max-w-lg">
                 <div class="card-body">
-                    <h2 class="card-title uppercase text-[#0059A8]">{{$category}}</h2>
+                    <h2 class="card-title uppercase text-[#009341]">{{$category}}</h2>
                     @foreach ($committees as $committee)
                     @if ($committee->category == $category)
                     <ul class= "list-disc list-inside">
                         <li class="mb-2 text-gray-500">{{ $committee->name }}
                             @if ($committee->title != null)
-                            <br>
-                            <span class="font-semibold ml-3">({{ $committee->title }})</span>
+                            
+                            <span class="font-semibold ml-1">({{ $committee->title }})</span>
                             @endif
                         </li>
                     </ul>

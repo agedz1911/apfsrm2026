@@ -9,7 +9,7 @@
     <section class="mx-auto w-full px-1 lg:px-6 pt-16 pb-12">
         <div class="">
             <div class="w-full px-3">
-                <label class="input input-info rounded-xl input-lg w-full">
+                <label class="input input-success rounded-xl input-lg w-full">
                     <i class="fa-solid fa-search h-[1em] opacity-50"></i>
                     <input wire:model.live.debounce.500ms="searchTerm" type="text" class="w-full" required
                         placeholder="Search Faculties.." />
@@ -21,7 +21,7 @@
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider text-lg text-[#0a3542] hover:text-[#009341]"
                         aria-label="Indonesian Faculties" checked="checked" />
-                    <div class="tab-content border-base-300 bg-sky-50 p-5 rounded-lg">
+                    <div class="tab-content border-base-300 bg-emerald-50 p-5 rounded-lg">
                         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
                             @foreach ($indofaculties as $indo)
                             <div class="card bg-base-100 shadow-sm ">
@@ -98,7 +98,7 @@
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider  text-lg text-[#0a3542] hover:text-[#009341]"
                         aria-label="Foreign faculties" />
-                    <div class="tab-content border-base-300 bg-sky-50 p-5 rounded-lg">
+                    <div class="tab-content border-base-300 bg-emerald-50 p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
