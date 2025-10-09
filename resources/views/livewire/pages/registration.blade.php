@@ -36,7 +36,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Late/Onsite Registration <br>
-                                        Start From 1 Feb 2026
+                                        Start From 2 Feb 2026
                                     </th>
 
                                 </tr>
@@ -185,7 +185,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Late/Onsite Registration <br>
-                                        Start From 1 Feb 2026
+                                        Start From 2 Feb 2026
                                     </th>
 
                                 </tr>
