@@ -16,7 +16,7 @@
                     {{-- <span class="bg-green-600 mt-5 text-green-600 px-3 py-2 text-sm rounded-xl ">Indonesian
                         Participants</span> --}}
                     @foreach ($uniqueLocals as $category)
-                    @if ($category == 'Symposium')
+                    @if ($category == 'Symposium Local & Member (WSRM & ICM)')
                     <h2 class="uppercase font-semibold text-[#0A3542] mb-2 mt-5">{{$category}}</h2>
                     <div class="relative overflow-x-auto shadow sm:rounded-lg ">
                         <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
@@ -27,14 +27,16 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Early Bird Registration <br>
-                                        up to 5 Sep 2025
+                                        up to 1 Dec 2025
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Late Registration <br>
-                                        After 5 Sep up to 18 Nov 2025
+                                        Regular Registration<br>
+                                        up to
+                                        1 Feb 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Onsite Registration
+                                        Late/Onsite Registration <br>
+                                        after 1 Feb 2026
                                     </th>
 
                                 </tr>
@@ -164,7 +166,7 @@
                     {{-- <span class="bg-green-600 text-green-600 px-3 py-2 text-sm rounded-xl mb-3">Foreign
                         Participants</span> --}}
                     @foreach ($uniqueForeigns as $category)
-                    <h2 class="uppercase font-semibold text-green-800 mb-2 mt-5">{{$category}}</h2>
+                    <h2 class="uppercase font-semibold text-[#0A3542] mb-2 mt-5">{{$category}}</h2>
                     <div class="relative overflow-x-auto shadow sm:rounded-lg">
                         <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
                             <thead class=" text-white uppercase text-center bg-green-800 ">
@@ -174,14 +176,16 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Early Bird Registration <br>
-                                        up to 5 Sep 2025
+                                        up to 1 Dec 2025
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Late Registration <br>
-                                        After 5 Sep up to 18 Nov 2025
+                                        Regular Registration<br>
+                                        up to
+                                        1 Feb 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Onsite Registration
+                                        Late/Onsite Registration <br>
+                                        after 1 Feb 2026
                                     </th>
 
                                 </tr>

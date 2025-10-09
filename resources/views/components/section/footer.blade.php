@@ -3,12 +3,12 @@
     <div class="relative">
         <div class="flex flex-col items-center w-full max-w-4xl m-auto">
             
-            <img src="assets/images/logo/logo-event-light.png" alt="Icon"
+            <img src="assets/images/logo/logo-event-light.png" class="w-32" alt="Icon"
                 class="">
-            <h1 class="text-xl lg:text-2xl text-green-100 font-bold">Asian Pacific Federation of
+            {{-- <h1 class="text-xl lg:text-2xl text-green-100 font-bold">Asian Pacific Federation of
                 Societies for
                 <br><span class="text-green-100">Reconstructive Microsurgery</span>
-            </h1>
+            </h1> --}}
             
             <div class="border-b border-white m-auto mb-6 w-full max-w-2xl">
                 <!-- <p class=" mb-0">28<sup>th</sup> Annual Scientific Meeting of the Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons</p>
@@ -49,7 +49,7 @@
             </div>
             <div class="pb-10 mt-4">
                 <ul class="p-0 m-0 flex flex-row flex-wrap gap-4 lg:gap-6 justify-center">
-                    <li class="text-sm font-normal hover:text-green-600 hover:underline"><a href="#" wire:navigate>Submission</a></li>
+                    <li class="text-sm font-normal hover:text-green-600 hover:underline"><a href="/submission" wire:navigate>Submission</a></li>
                     <li class="text-sm font-normal hover:text-green-600 hover:underline"><a href="/organizing-committee" wire:navigate>Committee</a></li>
                     <li class="text-sm font-normal hover:text-green-600 hover:underline"><a wire:navigate href="/faculties">Faculties</a></li>
                     <li class="text-sm font-normal hover:text-green-600 hover:underline"><a wire:navigate href="/program-at-glance">Schedule</a></li>
