@@ -24,9 +24,14 @@
 
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
-            class="{{ request()->is('program-at-glance') || request()->is('scientific-schedule') ? 'text-green-400' : 'text-green-900' }} hover:cursor-pointer hover:text-green-600">
+            class="{{ request()->is('program-at-glance') || request()->is('topics') || request()->is('scientific-schedule') ? 'text-green-400' : 'text-green-900' }} hover:cursor-pointer hover:text-green-600">
             Scientific Program <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
+            <li>
+                <a href="/topics" wire:navigate
+                    class="{{ request()->is('topics') ? 'text-green-400' : '' }} justify-between hover:text-green-800">
+                    Topics <i class="fa-solid fa-angle-right"></i></a>
+            </li>
             <li>
                 <a href="#" wire:navigate
                     class="{{ request()->is('program-at-glance') ? 'text-green-400' : '' }} justify-between hover:text-green-800">Program
