@@ -10,11 +10,15 @@
                 <img src="assets/images/logo/logo-event.png" class="w-full max-w-sm rounded-xl" alt="Banner">
                 <div class="flex text-start w-fit relative">
                     <h1 class="text-lg lg:text-xl text-[#002c27] font-bold">
-                        The 7<sup>th</sup> Congress of APFSRM <br> (Asia Pacific Federation of <br> Societies of Reconstructive Microsurgery) <br> <span class="italic font-normal text-[#0A3542]"> In Conjunction with </span><br>
-                        <span class="text-[#002c27] ">The 1<sup>st</sup> Congress of InaSREM <br> (Indonesian Society of Reconstructive Microsurgery)</span>
+                        The 7<sup>th</sup> Congress of APFSRM <br> (Asia Pacific Federation of <br> Societies of
+                        Reconstructive Microsurgery) <br> <span class="italic font-normal text-[#0A3542]"> In
+                            Conjunction with </span><br>
+                        <span class="text-[#002c27] ">The 1<sup>st</sup> Congress of InaSREM <br> (Indonesian Society of
+                            Reconstructive Microsurgery)</span>
                     </h1>
                 </div>
-                <p class="italic mt-3 text-slate-300 font-semibold">" Learning Leap to Help Patients: Inspire and Be Inspired "</p>
+                <p class="italic mt-3 text-slate-300 font-semibold">" Learning Leap to Help Patients: Inspire and Be
+                    Inspired "</p>
                 <p class="text-slate-300 mt-3">
                     April 16<sup>th</sup> - 18<sup>th</sup>, 2026 <br> Bali Nusa Dua Convention Center (BNDCC 2), Bali,
                     Indonesia</p>
@@ -46,8 +50,10 @@
                     class="rounded-lg w-20 lg:w-40 hover:scale-105 transition-all duration-500" alt="">
             </div>
             <h1 class="text-lg lg:text-xl text-[#3a525e]  font-bold">
-                The 7<sup>th</sup> Congress of APFSRM <br> (Asia Pacific Federation of Societies of Reconstructive Microsurgery) <br> <span class="italic"> In Conjunction with </span><br>
-                <span class="text-[#0A3542] ">The 1<sup>st</sup> Congress of InaSREM <br> (Indonesian Society of Reconstructive Microsurgery)</span>
+                The 7<sup>th</sup> Congress of APFSRM <br> (Asia Pacific Federation of Societies of Reconstructive
+                Microsurgery) <br> <span class="italic"> In Conjunction with </span><br>
+                <span class="text-[#0A3542] ">The 1<sup>st</sup> Congress of InaSREM <br> (Indonesian Society of
+                    Reconstructive Microsurgery)</span>
             </h1>
 
             <div class="flex flex-col md:flex-row lg:justify-start justify-center items-center gap-3 mt-8">
@@ -183,8 +189,8 @@
                 @foreach ($welcomeMessages as $welcomeMessage)
                 <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
                     <div class="order-2 lg:order-2 p-2">
-                        <div class="w-full justify-center lg:flex-row flex flex-col items-center gap-2">
-                            <div class="image-welcome">
+                        <div class="w-full justify-center lg:flex-row flex flex-col items-center gap-2 mb-3">
+                            {{-- <div class="image-welcome">
                                 <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
                                     assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
                                     class="w-40 h-40 object-cover rounded">
@@ -194,6 +200,32 @@
                                     <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
                                         "</p>
                                     <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
+                                </div>
+                            </div> --}}
+                            <div class="bg-[#f5fdff] p-3 rounded-lg shadow-md">
+                                <img src="
+                                    assets/images/ttd_teddy.png" class="w-full max-w-md" alt="Signature">
+                            </div>
+                            <div class="p-4 rounded-lg bg-green-600 w-full max-w-sm">
+                                <div class="ps-4 border-s border-white border-spacing-7">
+                                    <p class="text-white text-xs italic">" Congress President APFSRM 2026
+                                        "</p>
+                                    <h6 class="font-semibold text-white">Prof. Theddeus Prasetyono, MD, PhD </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full justify-center lg:flex-row flex flex-col items-center gap-2">
+                            <div class="bg-[#f5fdff] p-3 rounded-lg shadow-md">
+                                <img src="
+                                    assets/images/ttd_heri.png" class="w-full max-w-md" alt="Signature">
+                            </div>
+                            <div class="p-4 rounded-lg bg-green-600 w-full max-w-sm">
+                                <div class="ps-4 border-s border-white border-spacing-7">
+                                    <p class="text-white text-xs italic">" President APFSRM <br>
+                                        President, Indonesian Society of Reconstructive Microsurgery (InaSREM)
+                                        "</p>
+                                    <h6 class="font-semibold text-white">Heri Suroto, MD, PhD
+                                    </h6>
                                 </div>
                             </div>
                         </div>
