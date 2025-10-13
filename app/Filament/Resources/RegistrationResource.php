@@ -31,7 +31,7 @@ class RegistrationResource extends Resource
             ->schema([
                 Select::make('category_reg')
                     ->options([
-                        'Symposium Local & Member (WSRM & ICM)' => 'Symposium Local & Member (WSRM & ICM)',
+                        'Symposium Local & Member (WSRM & IMC)' => 'Symposium Local & Member (WSRM & IMC)',
                         'Symposium Overseas Non Member' => 'Symposium Overseas Non Member',
                     ])
                     ->native(false),

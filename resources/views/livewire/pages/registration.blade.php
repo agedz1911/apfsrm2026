@@ -16,7 +16,7 @@
                     {{-- <span class="bg-green-600 mt-5 text-green-600 px-3 py-2 text-sm rounded-xl ">Indonesian
                         Participants</span> --}}
                     @foreach ($uniqueLocals as $category)
-                    @if ($category == 'Symposium Local & Member (WSRM & ICM)')
+                    @if ($category == 'Symposium Local & Member (WSRM & IMC)')
                     <h2 class="uppercase font-semibold text-[#0A3542] mb-2 mt-5">{{$category}}</h2>
                     <div class="relative overflow-x-auto shadow sm:rounded-lg ">
                         <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
@@ -221,6 +221,16 @@
                     @endforeach
                 </div>
             </div>
+        </div>
+
+        <div>
+            <p class="text-sm italic text-gray-500 mt-5">* Group registration (one payment) </p>
+            <ol class="text-sm italic text-gray-500 list-disc list-inside ml-3">
+                <li>Min 5 up to 9 participant 5% disc.</li>
+                <li>10 and above 10% disc</li>
+                <li>Min 25 please contact secretariat for better deal</li>
+            </ol>
+            <p class="text-sm italic text-gray-500">* For Group Registration please email to <a class="text-success hover:text-green-700 hover:underline" href="mailto:apfsrm2026bali@pharma-pro.com">apfsrm2026bali@pharma-pro.com</a></p>
         </div>
     </section>
 

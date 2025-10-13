@@ -13,7 +13,7 @@
                         The 7<sup>th</sup> Congress of APFSRM <br> (Asia Pacific Federation of <br> Societies of
                         Reconstructive Microsurgery) <br> <span class="italic font-normal text-[#0A3542]"> In
                             Conjunction with </span><br>
-                        <span class="text-[#002c27] ">The 1<sup>st</sup> Congress of InaSREM <br> (Indonesian Society of
+                        <span class="text-[#002c27] ">The Congress of InaSREM <br> (Indonesian Society of
                             Reconstructive Microsurgery)</span>
                     </h1>
                 </div>
@@ -52,7 +52,7 @@
             <h1 class="text-lg lg:text-xl text-[#3a525e]  font-bold">
                 The 7<sup>th</sup> Congress of APFSRM <br> (Asia Pacific Federation of Societies of Reconstructive
                 Microsurgery) <br> <span class="italic"> In Conjunction with </span><br>
-                <span class="text-[#0A3542] ">The 1<sup>st</sup> Congress of InaSREM <br> (Indonesian Society of
+                <span class="text-[#0A3542] ">The Congress of InaSREM <br> (Indonesian Society of
                     Reconstructive Microsurgery)</span>
             </h1>
 
