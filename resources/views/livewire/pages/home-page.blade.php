@@ -4,7 +4,8 @@
         <div
             class="flex z-10 flex-col lg:flex-row justify-center items-center lg:justify-evenly gap-8 relative pt-10 md:pt-14 lg:pt-32">
             <div class="px-1 order-2 lg:order-1">
-                <img src="assets/images/banner.png" class="w-full max-w-md rounded-xl" alt="Banner">
+                {{-- <img src="assets/images/banner.png" class="w-full max-w-md rounded-xl" alt="Banner"> --}}
+                <livewire:section.flyer />
             </div>
             <div class="px-5 order-1 lg:order-2">
                 <img src="assets/images/logo/logo-event.png" class="w-full max-w-sm rounded-xl" alt="Banner">
