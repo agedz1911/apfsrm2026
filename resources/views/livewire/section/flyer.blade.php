@@ -11,8 +11,9 @@
         </div>
         @endforeach
     </div>
-    @endif
+    @else
     <img src="assets/images/banner.png" class="w-full max-w-md rounded-xl" alt="Banner">
+    @endif
 </div>
 
 <script>
