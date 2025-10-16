@@ -22,7 +22,7 @@
                         class="tab uppercase tracking-wider text-lg text-[#0a3542] hover:text-[#009341]"
                         aria-label="Indonesian Faculties" checked="checked" />
                     <div class="tab-content border-base-300 bg-emerald-50 p-5 rounded-lg">
-                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                             @foreach ($indofaculties as $indo)
                             <div class="card bg-base-100 shadow-sm ">
                                 <figure class="relative">

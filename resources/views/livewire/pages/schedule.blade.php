@@ -157,4 +157,12 @@
             </div>
         </div>
     </section>
+
+    <section class="pt-10 pb-24 px-2 lg:px-5">
+        <h1 class="text-xl">Conflict of Interest / Disclosure Statement Form</h1>
+        <p>Please download for Disclosure Statement</p>
+        <div class="w-full flex text-center">
+            <a href="/download/COI_Form.pdf" target="_blank" class="btn text-white rounded-xl bg-green-700 hover:bg-green-900 w-full"><i class="fa-solid fa-download me-1"></i> Download Conflict of Interest / Disclosure Statement Form</a>
+        </div>
+    </section>
 </div>

@@ -565,69 +565,69 @@
                                     @if ($convention3->room == 'Pasteur Convention Center 3')
 
                                     <a href="#modal_{{$convention3->id}}">
-                                        <div
-                                            class="card bg-[{{$convention3->color}}] mb-1 shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-sky-200">
-                                            <div class="card-body text-center">
-                                                <p class="font-semibold">{{$convention3->time}}</p>
-                                                <h2 class="text-lg font-light text-gray-500">{{$convention3->title_ses}}
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    @endif
+                                <div
+                                    class="card bg-[{{$convention3->color}}] mb-1 shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-sky-200">
+                                    <div class="card-body text-center">
+                                        <p class="font-semibold">{{$convention3->time}}</p>
+                                        <h2 class="text-lg font-light text-gray-500">{{$convention3->title_ses}}
+                                        </h2>
+                                    </div>
+                                </div>
+                                </a>
+                                @endif
 
-                                    <div class="modal" role="dialog" id="modal_{{$convention3->id}}">
-                                        <div class="modal-box w-11/12 max-w-5xl">
-                                            <h2 class="text-lg font-semibold">{{$convention3->title_ses}}</h2>
-                                            <div class="border-y border-y-slate-200 mt-4 py-5">
-                                                <div class="flex justify-between items-start mb-3">
-                                                    <div>
-                                                        <p class="text-sm text-gray-500">Date: <span
-                                                                class="font-semibold text-black">{{Carbon\Carbon::parse($convention3->date)->format('d
+                                <div class="modal" role="dialog" id="modal_{{$convention3->id}}">
+                                    <div class="modal-box w-11/12 max-w-5xl">
+                                        <h2 class="text-lg font-semibold">{{$convention3->title_ses}}</h2>
+                                        <div class="border-y border-y-slate-200 mt-4 py-5">
+                                            <div class="flex justify-between items-start mb-3">
+                                                <div>
+                                                    <p class="text-sm text-gray-500">Date: <span
+                                                            class="font-semibold text-black">{{Carbon\Carbon::parse($convention3->date)->format('d
                                                                 F Y')}}</span></p>
-                                                        <p class="text-sm text-gray-500">Time: <span
-                                                                class="font-semibold text-black">{{$convention3->time}}</span>
-                                                        </p>
-                                                    </div>
-                                                    <p>Room : <span
-                                                            class="font-semibold text-black">{{$convention3->room}}</span>
+                                                    <p class="text-sm text-gray-500">Time: <span
+                                                            class="font-semibold text-black">{{$convention3->time}}</span>
                                                     </p>
                                                 </div>
-                                                <p class="text-gray-500">Session: <span
-                                                        class="font-semibold text-black">{{$convention3->title_ses}}</span>
+                                                <p>Room : <span
+                                                        class="font-semibold text-black">{{$convention3->room}}</span>
                                                 </p>
-                                                <p class="text-gray-500">Moderator: <span
-                                                        class="font-semibold text-black">{{$convention3->moderator}}</span>
-                                                </p>
-
-                                                <div class="overflow-x-auto mt-4">
-                                                    <table class="table">
-                                                        <!-- head -->
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Time</th>
-                                                                <th>Topic</th>
-                                                                <th>Speaker</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            @foreach ($convention3->schedules as $schedule)
-                                                            <tr>
-                                                                <th>{{$schedule->time_speaker}}</th>
-                                                                <td>{{$schedule->topic_title}}</td>
-                                                                <td>{{$schedule->speaker}}</td>
-                                                            </tr>
-                                                            @endforeach
-                                                        </tbody>
-                                                    </table>
-                                                </div>
                                             </div>
-                                            <div class="modal-action">
-                                                <a href="#" class="btn btn-error">Close</a>
+                                            <p class="text-gray-500">Session: <span
+                                                    class="font-semibold text-black">{{$convention3->title_ses}}</span>
+                                            </p>
+                                            <p class="text-gray-500">Moderator: <span
+                                                    class="font-semibold text-black">{{$convention3->moderator}}</span>
+                                            </p>
+
+                                            <div class="overflow-x-auto mt-4">
+                                                <table class="table">
+                                                    <!-- head -->
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Time</th>
+                                                            <th>Topic</th>
+                                                            <th>Speaker</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach ($convention3->schedules as $schedule)
+                                                        <tr>
+                                                            <th>{{$schedule->time_speaker}}</th>
+                                                            <td>{{$schedule->topic_title}}</td>
+                                                            <td>{{$schedule->speaker}}</td>
+                                                        </tr>
+                                                        @endforeach
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
+                                        <div class="modal-action">
+                                            <a href="#" class="btn btn-error">Close</a>
+                                        </div>
                                     </div>
-                                    @endforeach
+                                </div>
+                                @endforeach
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($duaPuluhDua as $empire5)
@@ -705,6 +705,14 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section class="pt-10 pb-24 px-2 lg:px-5">
+        <h1 class="text-xl">Conflict of Interest / Disclosure Statement Form</h1>
+        <p>Please download for Disclosure Statement</p>
+        <div class="w-full flex text-center">
+            <a href="/download/COI_Form.pdf" target="_blank" class="btn text-white rounded-xl bg-green-700 hover:bg-green-900 w-full"><i class="fa-solid fa-download me-1"></i> Download Conflict of Interest / Disclosure Statement Form</a>
         </div>
     </section>
 </div>

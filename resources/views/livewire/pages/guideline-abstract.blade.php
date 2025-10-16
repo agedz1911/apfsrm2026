@@ -20,7 +20,7 @@
                     <div>
                         @foreach ($guidelineAbstracts as $abstract)
                         <div class="collapse collapse-plus bg-base-100 border border-base-300">
-                            <input type="radio" name="my-accordion-3"  />
+                            <input type="radio" name="my-accordion-3" />
                             <div class="collapse-title font-semibold">{{ $abstract->title }}</div>
                             <div class="collapse-content text-gray-500 text-sm">{!! str($abstract->description)->markdown()->sanitizeHtml() !!}</div>
                         </div>
@@ -36,11 +36,19 @@
                         <p class="m-0 text-xs text-gray-500 italic">*make sure the file complies with the guidelines.</p>
                     </div>
                     <div class="w-full flex text-center">
-                        <a href="https://expo2.virconex-id.com/abstract/apfsrm2026/index.php/upload_abstract" class="btn text-white rounded-xl bg-green-700 hover:bg-green-900 w-full"><i  class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
-                        
+                        <a href="https://expo2.virconex-id.com/abstract/apfsrm2026/index.php/upload_abstract" class="btn text-white rounded-xl bg-green-700 hover:bg-green-900 w-full"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
+
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="pt-10 pb-24 px-2 lg:px-5">
+        <h1 class="text-xl">Conflict of Interest / Disclosure Statement Form</h1>
+        <p>Please download for Disclosure Statement</p>
+        <div class="w-full flex text-center">
+            <a href="/download/COI_Form.pdf" target="_blank" class="btn text-white rounded-xl bg-green-700 hover:bg-green-900 w-full"><i class="fa-solid fa-download me-1"></i> Download Conflict of Interest / Disclosure Statement Form</a>
         </div>
     </section>
 </div>
