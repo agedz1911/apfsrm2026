@@ -10,10 +10,10 @@
     <section class="mx-auto w-full px-5 pt-16 pb-28 bg-competition">
         @foreach ($uniqueCategories as $category)
         <h2 class="text-center text-xl lg:text-2xl font-bold uppercase text-[#009341] mb-5 mt-5">{{$category}}</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-10">
+        <div class="flex flex-wrap gap-5 justify-center mb-10">
             @foreach ($committees as $committee)
             @if ($committee->category == $category)
-            <div class="card bg-base-200 shadow-sm">
+            <div class="card bg-base-200 shadow-sm w-full max-w-xs">
                 <figure class="avatar">
                     <img src="{{$committee->image ? asset('storage/' . $committee->image) : "
                                         assets/images/speaker.png"}}" alt="{{$committee->name}}"
