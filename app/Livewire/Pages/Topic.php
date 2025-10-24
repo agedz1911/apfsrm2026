@@ -13,11 +13,11 @@ class Topic extends Component
     {
         $topics = \App\Models\topic::orderBy('no_urut', 'asc')->where('is_active', true)->get();
         $uniqueCategories = $topics->pluck('category')->unique();
-        // $uniqueName = $topics->pluck('name')->unique();
+
         return view('livewire.pages.topic', [
-            'topics' => $topics, 
+            'topics' => $topics,
             'uniqueCategories' => $uniqueCategories,
-            // 'uniqueName' => $uniqueName
+
         ]);
     }
 }

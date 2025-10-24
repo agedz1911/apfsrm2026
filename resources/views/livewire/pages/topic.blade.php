@@ -11,21 +11,39 @@
         <div>
             @foreach ($uniqueCategories as $category)
             <p class="font-semibold">{{$category}}</p>
-            @foreach ($topics as $topic)
-            @if ($topic->category == $category)
-            @if ($topic->name != null)
-            <ul class="list-disc list-inside">
-                <li class="mb-2 text-gray-500">{{ $topic->name }}
-                    @if ($topic->sub_name != null)
 
-                    <span class="font-semibold ml-1">({{ $topic->sub_name }})</span>
+            @php
+            $categoryTopics = $topics->where('category', $category);
+            $mainTopics = $categoryTopics
+            ->whereNotNull('name')
+            ->unique('name')
+            ->values();
+            $specialSubs = $categoryTopics
+            ->where('name', 'Special Tracks')
+            ->pluck('sub_name')
+            ->filter() // buang null/empty
+            ->unique() // hindari duplikasi
+            ->values();
+            @endphp
+
+            <ol class="list-decimal list-inside space-y-2">
+                @foreach ($mainTopics as $main)
+                <li class="text-gray-800">
+                    @if ($main->name === 'Special Tracks')
+                    Special Tracks
+                    @if ($specialSubs->isNotEmpty())
+                    <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                        @foreach ($specialSubs as $sub)
+                        <li>{{ $sub }}</li>
+                        @endforeach
+                    </ul>
+                    @endif
+                    @else
+                    {{ $main->name }}
                     @endif
                 </li>
-
-            </ul>
-            @endif
-            @endif
-            @endforeach
+                @endforeach
+            </ol>
             @endforeach
         </div>
     </section>
