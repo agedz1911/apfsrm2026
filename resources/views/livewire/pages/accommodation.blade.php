@@ -9,18 +9,19 @@
     <section class="pt-10 pb-24 px-2 lg:px-5">
         <div class="text-center md:text-start mb-5">
             <h2 class="mb-3 uppercase text-4xl tracking-wide font-bold">Hotel <span class="text-green-600">Reservation</span></h2>
-            <p class="text-gray-500">The organizers of the ... congress have secured competitive rates at a variety of
+            <p class="text-gray-500">The organizers of The 7th Congress of APFSRM In Conjunction with
+                The Congress of InaSREM congress have secured competitive rates at a variety of
                 hotels near the Venue to accommodate delegates
                 with different budgets and preferences. Hotel reservations will open and are subject
                 to availability. It is advisable to book your preferred hotel as soon as possible
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 text-center">
             @foreach ($accommodations as $accommodation)
             <div class="w-full bg-white rounded-xl shadow-md pb-10">
                 <div class="">
-                    <div class="mb-3 relative p-3">
+                    <div class="mb-3 relative p-0">
                         {{-- menampilkan string HTML --}}
                         {!! $accommodation->tag ? '<span
                             class="absolute top-1 right-4 translate-y-5 bg-green-700 rounded-xl text-white px-3 py-1">

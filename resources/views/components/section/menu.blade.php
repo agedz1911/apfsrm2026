@@ -51,7 +51,7 @@
         </a>
     </li>
     <li>
-        <a href="#" wire:navigate
+        <a href="/accommodation" wire:navigate
             class="{{ request()->is('accommodation') ? 'text-green-400' : 'text-green-900' }} hover:text-green-600 hover:underline">Accommodation
         </a>
     </li>
