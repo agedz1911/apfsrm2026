@@ -60,9 +60,24 @@
             class="{{ request()->is('submission') ? 'text-green-400' : 'text-green-900' }} hover:text-green-600 hover:underline">Submission
         </a>
     </li>
-    <li>
-        <a href="/visiting" wire:navigate
-            class="{{ request()->is('visiting') ? 'text-green-400' : 'text-green-900' }} hover:text-green-600 hover:underline">Visiting
-        </a>
-    </li>
+    <div class="dropdown dropdown-hover">
+        <div tabindex="0"
+            class="{{ request()->is('visiting')  || request()->is('social-program')  ? 'text-green-400' : 'text-green-900' }} hover:cursor-pointer hover:text-green-600">
+            Visiting <i class="fa-solid fa-angle-down"></i></div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
+            <li>
+                <a href="/visiting" wire:navigate
+                    class="{{ request()->is('visiting') ? 'text-green-400' : '' }} justify-between hover:text-green-800">
+                    Bali <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li>
+                <a href="/visiting#venue" 
+                    class="{{ request()->is('visiting#venue') ? 'text-green-400' : '' }} justify-between hover:text-green-800">Conference Venue <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li>
+                <a href="/social-program" wire:navigate
+                    class="{{ request()->is('social-program') ? 'text-green-400' : '' }} justify-between hover:text-green-800">Social Program <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+    </div>
+    
 </ul>

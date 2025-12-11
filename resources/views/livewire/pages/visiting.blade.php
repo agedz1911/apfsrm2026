@@ -6,7 +6,7 @@
         </div>
     </section>
 
-    <section class="pb-24 pt-10">
+    <section class="pb-24 pt-10" id="bali">
         <div class="px-2 lg:px-5">
             <div class="flex gap-2 flex-wrap justify-between w-full items-end">
                 <div class="w-full max-w-xl pb-2">
@@ -35,7 +35,7 @@
                     <p>With more than 60 international and domestic airlines operating at the Ngurah Rai Bali
                         International Airport, this beautiful island is just a flight away from anywhere in the world.
                     </p>
-                    <div class="flex justify-between p-2">
+                    <div class="flex flex-wrap justify-between p-2 mt-5">
                         <button class="font-semibold hover:text-green-600 hover:cursor-pointer hover:underline">Visa
                             Regulation</button><i class="fa fa-arrows-up-down"></i>
                         <button onclick="flight.showModal()"
@@ -235,7 +235,7 @@
         </div>
     </section>
 
-    <section class="pb-24 ">
+    <section class="pb-24 " id="venue">
         <div class="px-2 lg:px-5">
             <p class="mb-1 text-green-600">Conference Venue</p>
             <h2 class="mb-1 text-xl font-extrabold tracking-wide">Bali Nusa Dua Convention Center (BNDCC)</h2>
