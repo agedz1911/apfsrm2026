@@ -148,7 +148,7 @@
                 <h2 class="mb-1 text-3xl font-bold uppercase">News <span class="text-green-600 ">Updates</span></h2>
             </div>
             <p class="font-semibold text-lg mb-3">Chang Gung Workhorse Flap Course 2026</p>
-            <p class="text-gray-700">We are excited to invite all participants of 7th APFSRM to join us for Master Series post-congress Course, organized by Changp Gung Memorial Hospital (CGMH) from April 19 to 20, 2026.</p>
+            <p class="text-gray-700">We are excited to invite all participants of 7th APFSRM to join us for Master Series post-congress Course, organized by Chang Gung Memorial Hospital (CGMH) from April 19 to 20, 2026.</p>
 
             <!-- Open the modal using ID.showModal() method -->
             <button class="btn bg-[#f5fdff] hover:bg-success" onclick="cgmh.showModal()">Read More..<i class="fa fa-angle-right ml-3"></i></button>
