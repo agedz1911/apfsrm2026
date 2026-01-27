@@ -136,12 +136,50 @@
         </div>
     </section>
 
-    <section class="lg:py-16 py-20">
+    <section class="lg:py-16 py-20 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3 ">
         <div class="w-full pt-5">
             <div class="text-center pb-6 m-auto">
                 <h2 class="mb-1 text-3xl font-bold uppercase">important <span class="text-green-600 ">Dates</span></h2>
             </div>
             <livewire:section.important-date />
+        </div>
+        <div class="w-full pt-5">
+            <div class="text-center pb-6 m-auto">
+                <h2 class="mb-1 text-3xl font-bold uppercase">News <span class="text-green-600 ">Updates</span></h2>
+            </div>
+            <p class="font-semibold text-lg mb-3">Chang Gung Workhorse Flap Course 2026</p>
+            <p class="text-gray-700">We are excited to invite all participants of 7th APFSRM to join us for Master Series post-congress Course, organized by Changp Gung Memorial Hospital (CGMH) from April 19 to 20, 2026.</p>
+
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn bg-[#f5fdff] hover:bg-success" onclick="cgmh.showModal()">Read More..<i class="fa fa-angle-right ml-3"></i></button>
+            <dialog id="cgmh" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                    <h3 class="text-lg font-bold">Chang Gung Workhorse Flap Course 2026</h3>
+                    <p class="py-4 text-gray-700">We invite you to join the fourth Chang Gung Memorial Hospital Master Series Course featuring Professor Fu-Chan Wei. From its fruition, the Chang Gung plastic and reconstructive surgery department has been dedicated to restoring form and function while advancing the field of microsurgery. This Master Series Course aims to distill a lifetime of surgical experience into a two-day instructional course for surgeons wanting to advance their proficiency.</p>
+                    <p class="pb-4 text-gray-700">The course will focus on flaps that can be harvested from the lower extremity. These flaps are the workhorse flaps for soft tissue and bony reconstruction, particularly for the head and neck. Instead of demonstrating an exhaustive number of flaps, this course will focus on mastering the fundamentals elevating flaps. Mastery of these techniques will empower the surgeon to harvest any flap in the body.</p>
+
+                    <p class="pb-4 text-gray-700">Date: April 19-20, 2026 <br>
+
+                        Venue: Chang Gung Memorial Hospital Surgical Training Academy and Research Center <br>
+
+                        Address: 8F, Research Building, No. 15, Wenhua 1st Rd., Guishan Dist., Taoyuan City 333, Taiwan (R.O.C.) <br>
+
+                        Golden Teaching Faculty: <br>
+                        Fu-Chan Wei, Chih-Hung Lin, Yu-Te Lin, Luke Cheng-Hung Lin, Chung-Kan Tsao, Huang-Kai Kao、Chung-Chen Hsu, Jung-Ju Huang, Tommy Nai-Jen Chang, Shih-Heng Chen, Johnny Ceung-Yi Lu
+                    </p>
+                    <p class="pb-4 font-semibold">for Registration </p>
+                    <div class="flex gap-3">
+                        <a class="btn btn-success" href="https://starc.cgmh.org.tw/en/course/detail/131" target="_blank">Trainee Registration</a>
+                        <a class="btn btn-success" href="https://starc.cgmh.org.tw/en/course/detail/132" target="_blank">Observer Registration</a>
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn btn-error">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </div>
     </section>
 
@@ -194,114 +232,114 @@
                             {{-- <div class="image-welcome">
                                 <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
                                     assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
-                                    class="w-40 h-40 object-cover rounded">
+                            class="w-40 h-40 object-cover rounded">
+                        </div>
+                        <div class="p-4 rounded-lg bg-green-600 w-full max-w-sm">
+                            <div class="ps-4 border-s border-white border-spacing-7">
+                                <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
+                                    "</p>
+                                <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
                             </div>
-                            <div class="p-4 rounded-lg bg-green-600 w-full max-w-sm">
-                                <div class="ps-4 border-s border-white border-spacing-7">
-                                    <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
-                                        "</p>
-                                    <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
-                                </div>
-                            </div> --}}
-                            <div class="bg-[#f5fdff] p-3 rounded-lg shadow-md">
-                                <img src="
+                        </div> --}}
+                        <div class="bg-[#f5fdff] p-3 rounded-lg shadow-md">
+                            <img src="
                                     assets/images/ttd_teddy.png" class="w-full max-w-md" alt="Signature">
-                            </div>
-                            <div class="p-4 rounded-lg bg-green-600 w-full max-w-sm">
-                                <div class="ps-4 border-s border-white border-spacing-7">
-                                    <p class="text-white text-xs italic">" Congress President APFSRM 2026
-                                        "</p>
-                                    <h6 class="font-semibold text-white">Prof. Theddeus Prasetyono, MD, PhD </h6>
-                                </div>
+                        </div>
+                        <div class="p-4 rounded-lg bg-green-600 w-full max-w-sm">
+                            <div class="ps-4 border-s border-white border-spacing-7">
+                                <p class="text-white text-xs italic">" Congress President APFSRM 2026
+                                    "</p>
+                                <h6 class="font-semibold text-white">Prof. Theddeus Prasetyono, MD, PhD </h6>
                             </div>
                         </div>
-                        <div class="w-full justify-center lg:flex-row flex flex-col items-center gap-2">
-                            <div class="bg-[#f5fdff] p-3 rounded-lg shadow-md">
-                                <img src="
+                    </div>
+                    <div class="w-full justify-center lg:flex-row flex flex-col items-center gap-2">
+                        <div class="bg-[#f5fdff] p-3 rounded-lg shadow-md">
+                            <img src="
                                     assets/images/ttd_heri.png" class="w-full max-w-md" alt="Signature">
-                            </div>
-                            <div class="p-4 rounded-lg bg-green-600 w-full max-w-sm">
-                                <div class="ps-4 border-s border-white border-spacing-7">
-                                    <p class="text-white text-xs italic">" President APFSRM <br>
-                                        President, Indonesian Society of Reconstructive Microsurgery (InaSREM)
-                                        "</p>
-                                    <h6 class="font-semibold text-white">Heri Suroto, MD, PhD
-                                    </h6>
-                                </div>
-                            </div>
                         </div>
-
-                    </div>
-                    <div class="order-1 lg:order-1 p-2 ">
-                        <div class="flex flex-col ">
-                            <h2 class="text-4xl text-white font-semibold uppercase">Welcome <span
-                                    class="text-green-600">message </span></h2>
-
-                            <div class="pr-2">
-                                <div class="pb-4 text-justify flex flex-col gap-2 text-gray-300">
-
-                                    {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
-
-                                </div>
+                        <div class="p-4 rounded-lg bg-green-600 w-full max-w-sm">
+                            <div class="ps-4 border-s border-white border-spacing-7">
+                                <p class="text-white text-xs italic">" President APFSRM <br>
+                                    President, Indonesian Society of Reconstructive Microsurgery (InaSREM)
+                                    "</p>
+                                <h6 class="font-semibold text-white">Heri Suroto, MD, PhD
+                                </h6>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                @endforeach
+                <div class="order-1 lg:order-1 p-2 ">
+                    <div class="flex flex-col ">
+                        <h2 class="text-4xl text-white font-semibold uppercase">Welcome <span
+                                class="text-green-600">message </span></h2>
+
+                        <div class="pr-2">
+                            <div class="pb-4 text-justify flex flex-col gap-2 text-gray-300">
+
+                                {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            @endforeach
         </div>
-    </section>
+</div>
+</section>
 
-    <!-- <livewire:section.competition /> -->
+<!-- <livewire:section.competition /> -->
 
-    <section class="w-full pt-24 pb-3 px-2 lg:px-4">
-        <div class="text-center mb-5 pb-10">
-            <p class="mb-1 font-semibold">Venue</p>
-            <h2 class=" text-4xl font-semibold uppercase mb-1">GET DIRECTION TO THE <span
-                    class="text-green-600">Venue</span></h2>
-        </div>
-        <div class="">
-            <div class="flex flex-col lg:flex-row gap-5">
-                <div class="lg:w-1/3 w-full">
-                    <div
-                        class="py-10 px-4 text-white rounded-lg shadow-md bg-gradient-to-br from-[#3c6d7e] to-[#12303a]">
-                        <div class="">
-                            <h5 class="text-green-600 pb-2 tracking-wide font-semibold">EVENT VENUE:</h5>
-                            <p class="pb-5 m-0 text-sm">Bali Nusa Dua Convention Center (BNDCC 2)</p>
-                            <h5 class="text-green-600 pb-2 tracking-wide font-semibold">ADDRESS:</h5>
-                            <p class="pb-5 m-0 text-sm">
-                                Nusa Dua Tourism Area Lot NW/1, Benoa, South Kuta District, Badung Regency, Bali,
-                                Indonesia </p>
-                            <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
+<section class="w-full pt-24 pb-3 px-2 lg:px-4">
+    <div class="text-center mb-5 pb-10">
+        <p class="mb-1 font-semibold">Venue</p>
+        <h2 class=" text-4xl font-semibold uppercase mb-1">GET DIRECTION TO THE <span
+                class="text-green-600">Venue</span></h2>
+    </div>
+    <div class="">
+        <div class="flex flex-col lg:flex-row gap-5">
+            <div class="lg:w-1/3 w-full">
+                <div
+                    class="py-10 px-4 text-white rounded-lg shadow-md bg-gradient-to-br from-[#3c6d7e] to-[#12303a]">
+                    <div class="">
+                        <h5 class="text-green-600 pb-2 tracking-wide font-semibold">EVENT VENUE:</h5>
+                        <p class="pb-5 m-0 text-sm">Bali Nusa Dua Convention Center (BNDCC 2)</p>
+                        <h5 class="text-green-600 pb-2 tracking-wide font-semibold">ADDRESS:</h5>
+                        <p class="pb-5 m-0 text-sm">
+                            Nusa Dua Tourism Area Lot NW/1, Benoa, South Kuta District, Badung Regency, Bali,
+                            Indonesia </p>
+                        <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
                                     <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
-                            <a class="hover:text-green-400">Get Directions</a>
-                        </div>
+                        <a class="hover:text-green-400">Get Directions</a>
                     </div>
                 </div>
-                <div class="lg:w-2/3 w-full px-1">
-                    <iframe class="rounded-lg w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.4463375527068!2d115.22347109839474!3d-8.796152999999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2432481681435%3A0x28d2de6bdbd07735!2sBali%20Nusa%20Dua%20Convention%20Center!5e0!3m2!1sid!2sid!4v1759245311923!5m2!1sid!2sid"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                </div>
             </div>
+            <div class="lg:w-2/3 w-full px-1">
+                <iframe class="rounded-lg w-full h-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.4463375527068!2d115.22347109839474!3d-8.796152999999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2432481681435%3A0x28d2de6bdbd07735!2sBali%20Nusa%20Dua%20Convention%20Center!5e0!3m2!1sid!2sid!4v1759245311923!5m2!1sid!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-5 justify-items-center">
-
-                <div class="w-full max-w-sm">
-                    <a><img src="assets/images/bali/1.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
-                </div>
-                <div class="w-full max-w-sm">
-                    <a><img src="assets/images/bali/2.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
-                </div>
-                <div class="w-full max-w-sm">
-                    <a><img src="assets/images/bali/3.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
-                </div>
             </div>
         </div>
-    </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-5 justify-items-center">
+
+            <div class="w-full max-w-sm">
+                <a><img src="assets/images/bali/1.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
+            </div>
+            <div class="w-full max-w-sm">
+                <a><img src="assets/images/bali/2.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
+            </div>
+            <div class="w-full max-w-sm">
+                <a><img src="assets/images/bali/3.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
 
 <script>
