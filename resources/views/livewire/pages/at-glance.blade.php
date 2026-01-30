@@ -844,7 +844,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($delapanbelas as $roomthree3)
-                                    @if ($roomthree3->room == 'Room 2')
+                                    @if ($roomthree3->room == 'Room 3')
 
                                     <a href="#modal_{{$roomthree3->id}}">
                                         <div
