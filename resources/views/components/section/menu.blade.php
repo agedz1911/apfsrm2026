@@ -33,12 +33,12 @@
                     Topics <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
-                <a href="/program-at-glance" wire:navigate
+                <a href="#" wire:navigate
                     class="{{ request()->is('program-at-glance') ? 'text-green-400' : '' }} justify-between hover:text-green-800">Program
                     at Glance <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
-                <a href="/scientific-schedule" wire:navigate
+                <a href="#" wire:navigate
                     class="{{ request()->is('scientific-schedule') ? 'text-green-400' : '' }} justify-between hover:text-green-800">Scientific
                     Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
