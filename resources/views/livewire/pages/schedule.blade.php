@@ -7,7 +7,7 @@
     </section>
 
     <div class="px-5 lg:px-10 mt-10">
-        <label class="input input-lg w-full">
+        <label class="input input-success input-lg w-full">
             <i class="fa fa-search opacity-45 text-sm"></i>
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
         </label>
@@ -19,7 +19,7 @@
                 <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
                     <!-- Page content here -->
-                    <label for="my-drawer-4" class="drawer-button btn bg-sky-700 hover:bg-blue-900 text-white rounded-lg px-3"><i
+                    <label for="my-drawer-4" class="drawer-button btn btn-success rounded-lg px-3"><i
                             class="fa-solid fa-filter"></i> Filter</label>
                 </div>
                 <div class="drawer-side">
@@ -99,28 +99,28 @@
             <div class="w-full lg:w-3/4 order-2 lg:order-1">
                 @foreach ($uniqDates as $date)
                 <div class="text-center lg:text-start border-t border-dashed pt-2">
-                    <h2 class="text-lg font-semibold uppercase text-[#92278F] tracking-wider">
+                    <h2 class="text-lg font-semibold uppercase text-success tracking-wider">
                         {{\Carbon\Carbon::parse($date)->format('l, d F')}}
                     </h2>
                 </div>
                 @foreach ($uniqCategories as $item)
                 <p class="font-semibold tracking-wider my-5"><i
-                        class="fa fa-angle-right text-sm text-sky-700 font-semibold"></i> {{$item}}</p>
+                        class="fa fa-angle-right text-sm text-green-700 font-semibold"></i> {{$item}}</p>
                 @foreach ($atglances as $atglance)
                 @if ($atglance->category_sesi == $item && $atglance->date == $date)
 
                 <div class="collapse bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
-                                class="fa fa-map-marker text-[#0059A8]"></i> {{$atglance->room}} </span></div>
+                                class="fa fa-map-marker text-success"></i> {{$atglance->room}} </span></div>
                     <div class="collapse-content text-sm">
                         <div class="">
                             <div>
                                 <p class="mb-1">
                                     <span class="font-semibold">Session:</span> {{$atglance->title_ses}}
                                 </p>
-                                <p class="mb-2"><i class="fa fa-clock text-[#0059A8]"></i> {{$atglance->time}} | <i
-                                        class="fa fa-map-marker text-[#0059A8]"></i> {{$atglance->room}}</p>
+                                <p class="mb-2"><i class="fa fa-clock text-success"></i> {{$atglance->time}} | <i
+                                        class="fa fa-map-marker text-success"></i> {{$atglance->room}}</p>
                             </div>
                             <div class="w-full">
                                 {{-- {{$atglance->category_sesi}} --}}
@@ -156,6 +156,8 @@
                 @endforeach
             </div>
         </div>
+        <p class="text-xs italic my-3 text-error">*tentative schedule</p>
+
     </section>
 
     <section class="pt-10 pb-24 px-2 lg:px-5">

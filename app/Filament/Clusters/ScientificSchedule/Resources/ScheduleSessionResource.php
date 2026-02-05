@@ -42,6 +42,7 @@ class ScheduleSessionResource extends Resource
                         'Research Proposal' => 'Research Proposal',
                         'E-Poster' => 'E-Poster',
                         'Video Parade' => 'Video Parade',
+                        'Master Course' => 'Master Course',
                     ])
                     ->native(false),
                 TextInput::make('title_ses')
@@ -51,11 +52,10 @@ class ScheduleSessionResource extends Resource
                 TextInput::make('time'),
                 Select::make('room')
                     ->options([
-                        'Pasteur Convention Center 1 & 2' => 'Pasteur Convention Center 1 & 2',
-                        'Pasteur Convention Center 3' => 'Pasteur Convention Center 3',
-                        'Empire 3' => 'Empire 3',
-                        'Empire 4' => 'Empire 4',
-                        'Empire 5' => 'Empire 5',
+                        'Plenary Hall' => 'Plenary Hall',
+                        'Room 1' => 'Room 1',
+                        'Room 2' => 'Room 2',
+                        'Room 3' => 'Room 3',
                     ])
                     ->searchable()
                     ->required()
