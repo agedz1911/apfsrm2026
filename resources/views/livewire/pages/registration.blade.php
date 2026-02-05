@@ -118,10 +118,10 @@
                                         Category
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Other Surgeons / General Practitioners (GP)
+                                        Registration Fee
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Nurse / Medical Students
+                                    <th scope="col" class="px-6 py-3 text-start">
+                                        Details
                                     </th>
 
                                 </tr>
@@ -137,9 +137,8 @@
                                         {{$regLocal->early_bird_reg != 0 ? 'IDR ' . number_format($regLocal->early_bird_reg,
                                         0, ',', '.') : ''}}
                                     </td>
-                                    <td class="px-6 py-4 text-center">
-                                        {{$regLocal->normal_reg != 0 ? 'IDR' . number_format($regLocal->normal_reg, 0, ',',
-                                        '.') : ''}}
+                                    <td class="px-6 py-4">
+                                        {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
                                     </td>
 
                                 </tr>

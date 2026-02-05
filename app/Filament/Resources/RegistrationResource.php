@@ -6,6 +6,7 @@ use App\Filament\Resources\RegistrationResource\Pages;
 use App\Filament\Resources\RegistrationResource\RelationManagers;
 use App\Models\Registration;
 use Filament\Forms;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -33,6 +34,7 @@ class RegistrationResource extends Resource
                     ->options([
                         'Symposium Local & Member (WSRM & IMC)' => 'Symposium Local & Member (WSRM & IMC)',
                         'Symposium Overseas Non Member' => 'Symposium Overseas Non Member',
+                        'Workshop' => 'Workshop',
                     ])
                     ->native(false),
                 Select::make('wilayah_reg')
@@ -48,6 +50,8 @@ class RegistrationResource extends Resource
                     ->numeric(),
                 TextInput::make('onsite_reg')
                     ->numeric(),
+                MarkdownEditor::make('description')
+                    ->columnSpanFull(),
                 Toggle::make('is_Active')
                     ->default(true)
                     ->inline(),
