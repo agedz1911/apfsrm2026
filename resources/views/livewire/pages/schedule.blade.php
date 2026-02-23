@@ -156,6 +156,12 @@
                 @endforeach
             </div>
         </div>
+        <div class=" mt-10">
+            <p class="text-sm text-error italic">
+                Note: <br>
+                The scientific schedule is provisional and may be adjusted as required.
+            </p>
+        </div>
         <p class="text-xs italic my-3 text-error">*tentative schedule</p>
 
     </section>
