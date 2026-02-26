@@ -43,6 +43,7 @@ class ScheduleSessionResource extends Resource
                         'E-Poster' => 'E-Poster',
                         'Video Parade' => 'Video Parade',
                         'Master Course' => 'Master Course',
+                        'Live Surgery' => 'Live Surgery',
                     ])
                     ->native(false),
                 TextInput::make('title_ses')
@@ -56,6 +57,11 @@ class ScheduleSessionResource extends Resource
                         'Room 1' => 'Room 1',
                         'Room 2' => 'Room 2',
                         'Room 3' => 'Room 3',
+                        'Room 4' => 'Room 4',
+                        'Room 5' => 'Room 5',
+                        'Room 6' => 'Room 6',
+                        'Room 7' => 'Room 7',
+                        'RS' => 'RS',
                     ])
                     ->searchable()
                     ->required()

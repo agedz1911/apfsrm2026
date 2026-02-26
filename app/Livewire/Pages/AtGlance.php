@@ -12,6 +12,7 @@ use Livewire\Component;
 class AtGlance extends Component
 {
     public $atglances;
+    public $limabelas;
     public $enambelas;
     public $tujuhbelas;
     public $delapanbelas;
@@ -19,6 +20,7 @@ class AtGlance extends Component
     public function mount()
     {
         $this->atglances = ScheduleSession::all();
+        $this->limabelas = $this->atglances->where('date', '2026-04-15')->sortBy('no_urut');
         $this->enambelas = $this->atglances->where('date', '2026-04-16')->sortBy('no_urut');
         $this->tujuhbelas = $this->atglances->where('date', '2026-04-17')->sortBy('no_urut');
         $this->delapanbelas = $this->atglances->where('date', '2026-04-18')->sortBy('no_urut');

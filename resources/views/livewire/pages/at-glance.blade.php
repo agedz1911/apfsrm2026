@@ -11,6 +11,95 @@
         <div class="tabs tabs-border justify-evenly">
             <input type="radio" name="my_tabs_2" checked="checked"
                 class="tab uppercase tracking-wider text-green-600 hover:text-[#0A3542]"
+                aria-label="Wednesday, 15 April 2026" />
+            <div class="tab-content">
+                <div class="overflow-x-auto  rounded-box border border-base-content/5 bg-base-100 border-gray-300">
+                    <table class="table table-sm">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th  class="text-center bg-base-200">Live Surgery Workshop</th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr>
+                                <td style="vertical-align: top">
+                                    @foreach ($limabelas as $siloam)
+                                    @if ($siloam->room == 'RS')
+
+                                    <a href="#modal_{{$siloam->id}}">
+                                        <div
+                                            class="card bg-[{{$siloam->color}}] mb-1 shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-green-200">
+                                            <div class="card-body text-center">
+                                                <p class="font-semibold">{{$siloam->time}}</p>
+                                                <h2 class="text-lg font-light text-gray-500">{{$siloam->title_ses}}
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    @endif
+
+                                    <div class="modal" role="dialog" id="modal_{{$siloam->id}}">
+                                        <div class="modal-box w-11/12 max-w-5xl">
+                                            <h2 class="text-lg font-semibold">{{$siloam->title_ses}}</h2>
+                                            <div class="border-y border-y-slate-200 mt-4 py-5">
+                                                <div class="flex justify-between items-start mb-3">
+                                                    <div>
+                                                        <p class="text-sm text-gray-500">Date: <span
+                                                                class="font-semibold text-black">{{Carbon\Carbon::parse($siloam->date)->format('d
+                                                                F Y')}}</span></p>
+                                                        <p class="text-sm text-gray-500">Time: <span
+                                                                class="font-semibold text-black">{{$siloam->time}}</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>Room : <span
+                                                            class="font-semibold text-black">{{$siloam->room}}</span>
+                                                    </p>
+                                                </div>
+                                                <p class="text-gray-500">Session: <span
+                                                        class="font-semibold text-black">{{$siloam->title_ses}}</span>
+                                                </p>
+                                                <p class="text-gray-500">Moderator: <span
+                                                        class="font-semibold text-black">{{$siloam->moderator}}</span>
+                                                </p>
+
+                                                <div class="overflow-x-auto mt-4">
+                                                    <table class="table">
+                                                        <!-- head -->
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Time</th>
+                                                                <th>Topic</th>
+                                                                <th>Speaker</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($siloam->schedules as $schedule)
+                                                            <tr>
+                                                                <th>{{$schedule->time_speaker}}</th>
+                                                                <td>{{$schedule->topic_title}}</td>
+                                                                <td>{{$schedule->speaker}}</td>
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-action">
+                                                <a href="#" class="btn btn-error">Close</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <input type="radio" name="my_tabs_2"
+                class="tab uppercase tracking-wider text-green-600 hover:text-[#0A3542]"
                 aria-label="Thursday, 16 April 2026" />
             <div class="tab-content">
                 <div class="overflow-x-auto  rounded-box border border-base-content/5 bg-base-100 border-gray-300">
@@ -18,14 +107,9 @@
                         <!-- head -->
                         <thead>
                             <tr>
-                                <th colspan="4" class="text-center bg-base-200">CONFERENCE DAY 1</th>
+                                <th colspan="8" class="text-center bg-base-200">CONFERENCE DAY 1</th>
                             </tr>
-                            <tr class="text-green-600 bg-base-200 text-xs">
-                                <th style="width: 25%;" class="text-center">Plenary Hall</th>
-                                <th style="width: 25%;" class="text-center">Room 1</th>
-                                <th style="width: 25%;" class="text-center">Room 2</th>
-                                <th style="width: 25%;" class="text-center">Room 3</th>
-                            </tr>
+                            
                         </thead>
                         <tbody class="text-sm">
                             <tr>
@@ -238,7 +322,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room3)
-                                    @if ($room3->room == 'Room 3')
+                                    @if ($room3->room == 'Room 4')
 
                                     <a href="#modal_{{$room3->id}}">
                                         <div
@@ -288,6 +372,282 @@
                                                         </thead>
                                                         <tbody>
                                                             @foreach ($room3->schedules as $schedule)
+                                                            <tr>
+                                                                <th>{{$schedule->time_speaker}}</th>
+                                                                <td>{{$schedule->topic_title}}</td>
+                                                                <td>{{$schedule->speaker}}</td>
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-action">
+                                                <a href="#" class="btn btn-error">Close</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </td>
+                                <td style="vertical-align: top">
+                                    @foreach ($enambelas as $room4)
+                                    @if ($room4->room == 'Room 4')
+
+                                    <a href="#modal_{{$room4->id}}">
+                                        <div
+                                            class="card bg-[{{$room4->color}}] mb-1 shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-green-200">
+                                            <div class="card-body text-center">
+                                                <p class="font-semibold">{{$room4->time}}</p>
+                                                <h2 class="text-lg font-light text-gray-500">{{$room4->title_ses}}
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    @endif
+
+                                    <div class="modal" role="dialog" id="modal_{{$room4->id}}">
+                                        <div class="modal-box w-11/12 max-w-5xl">
+                                            <h2 class="text-lg font-semibold">{{$room4->title_ses}}</h2>
+                                            <div class="border-y border-y-slate-200 mt-4 py-5">
+                                                <div class="flex justify-between items-start mb-3">
+                                                    <div>
+                                                        <p class="text-sm text-gray-500">Date: <span
+                                                                class="font-semibold text-black">{{Carbon\Carbon::parse($room4->date)->format('d
+                                                                F Y')}}</span></p>
+                                                        <p class="text-sm text-gray-500">Time: <span
+                                                                class="font-semibold text-black">{{$room4->time}}</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>Room : <span
+                                                            class="font-semibold text-black">{{$room4->room}}</span>
+                                                    </p>
+                                                </div>
+                                                <p class="text-gray-500">Session: <span
+                                                        class="font-semibold text-black">{{$room4->title_ses}}</span>
+                                                </p>
+                                                <p class="text-gray-500">Moderator: <span
+                                                        class="font-semibold text-black">{{$room4->moderator}}</span>
+                                                </p>
+
+                                                <div class="overflow-x-auto mt-4">
+                                                    <table class="table">
+                                                        <!-- head -->
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Time</th>
+                                                                <th>Topic</th>
+                                                                <th>Speaker</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($room4->schedules as $schedule)
+                                                            <tr>
+                                                                <th>{{$schedule->time_speaker}}</th>
+                                                                <td>{{$schedule->topic_title}}</td>
+                                                                <td>{{$schedule->speaker}}</td>
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-action">
+                                                <a href="#" class="btn btn-error">Close</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </td>
+                                <td style="vertical-align: top">
+                                    @foreach ($enambelas as $room5)
+                                    @if ($room5->room == 'Room 5')
+
+                                    <a href="#modal_{{$room5->id}}">
+                                        <div
+                                            class="card bg-[{{$room5->color}}] mb-1 shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-green-200">
+                                            <div class="card-body text-center">
+                                                <p class="font-semibold">{{$room5->time}}</p>
+                                                <h2 class="text-lg font-light text-gray-500">{{$room5->title_ses}}
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    @endif
+
+                                    <div class="modal" role="dialog" id="modal_{{$room5->id}}">
+                                        <div class="modal-box w-11/12 max-w-5xl">
+                                            <h2 class="text-lg font-semibold">{{$room5->title_ses}}</h2>
+                                            <div class="border-y border-y-slate-200 mt-4 py-5">
+                                                <div class="flex justify-between items-start mb-3">
+                                                    <div>
+                                                        <p class="text-sm text-gray-500">Date: <span
+                                                                class="font-semibold text-black">{{Carbon\Carbon::parse($room5->date)->format('d
+                                                                F Y')}}</span></p>
+                                                        <p class="text-sm text-gray-500">Time: <span
+                                                                class="font-semibold text-black">{{$room5->time}}</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>Room : <span
+                                                            class="font-semibold text-black">{{$room5->room}}</span>
+                                                    </p>
+                                                </div>
+                                                <p class="text-gray-500">Session: <span
+                                                        class="font-semibold text-black">{{$room5->title_ses}}</span>
+                                                </p>
+                                                <p class="text-gray-500">Moderator: <span
+                                                        class="font-semibold text-black">{{$room5->moderator}}</span>
+                                                </p>
+
+                                                <div class="overflow-x-auto mt-4">
+                                                    <table class="table">
+                                                        <!-- head -->
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Time</th>
+                                                                <th>Topic</th>
+                                                                <th>Speaker</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($room5->schedules as $schedule)
+                                                            <tr>
+                                                                <th>{{$schedule->time_speaker}}</th>
+                                                                <td>{{$schedule->topic_title}}</td>
+                                                                <td>{{$schedule->speaker}}</td>
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-action">
+                                                <a href="#" class="btn btn-error">Close</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </td>
+                                <td style="vertical-align: top">
+                                    @foreach ($enambelas as $room6)
+                                    @if ($room6->room == 'Room 6')
+
+                                    <a href="#modal_{{$room6->id}}">
+                                        <div
+                                            class="card bg-[{{$room6->color}}] mb-1 shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-green-200">
+                                            <div class="card-body text-center">
+                                                <p class="font-semibold">{{$room6->time}}</p>
+                                                <h2 class="text-lg font-light text-gray-500">{{$room6->title_ses}}
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    @endif
+
+                                    <div class="modal" role="dialog" id="modal_{{$room6->id}}">
+                                        <div class="modal-box w-11/12 max-w-5xl">
+                                            <h2 class="text-lg font-semibold">{{$room6->title_ses}}</h2>
+                                            <div class="border-y border-y-slate-200 mt-4 py-5">
+                                                <div class="flex justify-between items-start mb-3">
+                                                    <div>
+                                                        <p class="text-sm text-gray-500">Date: <span
+                                                                class="font-semibold text-black">{{Carbon\Carbon::parse($room6->date)->format('d
+                                                                F Y')}}</span></p>
+                                                        <p class="text-sm text-gray-500">Time: <span
+                                                                class="font-semibold text-black">{{$room6->time}}</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>Room : <span
+                                                            class="font-semibold text-black">{{$room6->room}}</span>
+                                                    </p>
+                                                </div>
+                                                <p class="text-gray-500">Session: <span
+                                                        class="font-semibold text-black">{{$room6->title_ses}}</span>
+                                                </p>
+                                                <p class="text-gray-500">Moderator: <span
+                                                        class="font-semibold text-black">{{$room6->moderator}}</span>
+                                                </p>
+
+                                                <div class="overflow-x-auto mt-4">
+                                                    <table class="table">
+                                                        <!-- head -->
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Time</th>
+                                                                <th>Topic</th>
+                                                                <th>Speaker</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($room6->schedules as $schedule)
+                                                            <tr>
+                                                                <th>{{$schedule->time_speaker}}</th>
+                                                                <td>{{$schedule->topic_title}}</td>
+                                                                <td>{{$schedule->speaker}}</td>
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-action">
+                                                <a href="#" class="btn btn-error">Close</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </td>
+                                <td style="vertical-align: top">
+                                    @foreach ($enambelas as $room7)
+                                    @if ($room7->room == 'Room 7')
+
+                                    <a href="#modal_{{$room7->id}}">
+                                        <div
+                                            class="card bg-[{{$room7->color}}] mb-1 shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-green-200">
+                                            <div class="card-body text-center">
+                                                <p class="font-semibold">{{$room7->time}}</p>
+                                                <h2 class="text-lg font-light text-gray-500">{{$room7->title_ses}}
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    @endif
+
+                                    <div class="modal" role="dialog" id="modal_{{$room7->id}}">
+                                        <div class="modal-box w-11/12 max-w-5xl">
+                                            <h2 class="text-lg font-semibold">{{$room7->title_ses}}</h2>
+                                            <div class="border-y border-y-slate-200 mt-4 py-5">
+                                                <div class="flex justify-between items-start mb-3">
+                                                    <div>
+                                                        <p class="text-sm text-gray-500">Date: <span
+                                                                class="font-semibold text-black">{{Carbon\Carbon::parse($room7->date)->format('d
+                                                                F Y')}}</span></p>
+                                                        <p class="text-sm text-gray-500">Time: <span
+                                                                class="font-semibold text-black">{{$room7->time}}</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>Room : <span
+                                                            class="font-semibold text-black">{{$room7->room}}</span>
+                                                    </p>
+                                                </div>
+                                                <p class="text-gray-500">Session: <span
+                                                        class="font-semibold text-black">{{$room7->title_ses}}</span>
+                                                </p>
+                                                <p class="text-gray-500">Moderator: <span
+                                                        class="font-semibold text-black">{{$room7->moderator}}</span>
+                                                </p>
+
+                                                <div class="overflow-x-auto mt-4">
+                                                    <table class="table">
+                                                        <!-- head -->
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Time</th>
+                                                                <th>Topic</th>
+                                                                <th>Speaker</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($room7->schedules as $schedule)
                                                             <tr>
                                                                 <th>{{$schedule->time_speaker}}</th>
                                                                 <td>{{$schedule->topic_title}}</td>
