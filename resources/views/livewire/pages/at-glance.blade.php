@@ -35,6 +35,7 @@
                                                 <p class="font-semibold">{{$siloam->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$siloam->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$siloam->category_sesi}}</div>
                                             </div>
                                         </div>
                                     </a>
@@ -124,6 +125,7 @@
                                                 <p class="font-semibold">{{$plenary->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$plenary->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$plenary->category_sesi}}</div>
                                             </div>
                                         </div>
                                     </a>
@@ -193,6 +195,7 @@
                                                 <p class="font-semibold">{{$room1->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500 ">{{$room1->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$room1->category_sesi}}</div>
                                             </div>
                                         </div>
                                     </a>
@@ -262,6 +265,7 @@
                                                 <p class="font-semibold">{{$room2->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$room2->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$plenary->category_sesi}}</div>
                                             </div>
                                         </div>
                                     </a>
@@ -322,7 +326,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room3)
-                                    @if ($room3->room == 'Room 4')
+                                    @if ($room3->room == 'Room 3')
 
                                     <a href="#modal_{{$room3->id}}">
                                         <div
@@ -331,6 +335,8 @@
                                                 <p class="font-semibold">{{$room3->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$room3->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$room3->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -400,6 +406,8 @@
                                                 <p class="font-semibold">{{$room4->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$room4->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$room4->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -469,6 +477,8 @@
                                                 <p class="font-semibold">{{$room5->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$room5->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$room5->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -538,6 +548,8 @@
                                                 <p class="font-semibold">{{$room6->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$room6->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$room6->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -607,6 +619,8 @@
                                                 <p class="font-semibold">{{$room7->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$room7->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$room7->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -702,6 +716,8 @@
                                                 <p class="font-semibold">{{$plenary2->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$plenary2->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$plenary2->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -771,6 +787,8 @@
                                                 <p class="font-semibold">{{$roomone2->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$roomone2->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$roomone2->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -840,6 +858,8 @@
                                                 <p class="font-semibold">{{$roomtwo2->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$roomtwo2->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$roomtwo2->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -909,6 +929,8 @@
                                                 <p class="font-semibold">{{$roomthree2->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$roomthree2->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$roomthree2->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -1005,6 +1027,8 @@
                                                 <p class="font-semibold">{{$plenary3->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$plenary3->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$plenary3->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -1075,6 +1099,8 @@
                                                 <p class="font-semibold">{{$roomone3->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$roomone3->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$roomone3->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -1144,6 +1170,8 @@
                                                 <p class="font-semibold">{{$roomtwo3->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$roomtwo3->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$roomtwo3->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -1213,6 +1241,8 @@
                                                 <p class="font-semibold">{{$roomthree3->time}}</p>
                                                 <h2 class="text-lg font-light text-gray-500">{{$roomthree3->title_ses}}
                                                 </h2>
+                                                <div class="badge badge-outline badge-success badge-sm">{{$roomthree3->category_sesi}}</div>
+
                                             </div>
                                         </div>
                                     </a>
