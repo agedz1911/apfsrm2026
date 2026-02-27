@@ -9,7 +9,7 @@
     <div class="px-5 lg:px-10 mt-10">
         <label class="input input-success input-lg w-full">
             <i class="fa fa-search opacity-45 text-sm"></i>
-            <input wire:model.live='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
+            <input wire:model.live.debounce.500ms='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
         </label>
     </div>
 
@@ -31,9 +31,9 @@
                             <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                                 <legend class="fieldset-legend">Date</legend>
                                 <div class="flex items-center">
-                                    <select wire:model.live='date' class="select flex-grow">
+                                    <select wire:model.live.debounce.500ms='date' class="select flex-grow">
                                         <option value="0">Choose a date</option>
-                                        @foreach ($uniqDates as $date)
+                                        @foreach ($uniqDates->sort() as $date)
                                         <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}
                                         </option>
                                         @endforeach
@@ -46,7 +46,7 @@
                             <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                                 <legend class="fieldset-legend">Session</legend>
                                 <div class="flex items-center">
-                                    <select wire:model.live='category' class="select flex-grow">
+                                    <select wire:model.live.debounce.500ms='category' class="select flex-grow">
                                         <option value="0">Choose a Session</option>
                                         @foreach ($uniqCategories as $item)
                                         <option value="{{ $item }}">{{ $item }}</option>
@@ -68,9 +68,9 @@
                     <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                         <legend class="fieldset-legend">Date</legend>
                         <div class="flex items-center">
-                            <select wire:model.live='date' class="select flex-grow">
+                            <select wire:model.live.debounce.500ms='date' class="select flex-grow">
                                 <option value="0">Choose a date</option>
-                                @foreach ($uniqDates as $date)
+                                @foreach ($uniqDates->sort() as $date)
                                 <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}</option>
                                 @endforeach
                             </select>
@@ -82,7 +82,7 @@
                     <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                         <legend class="fieldset-legend">Session</legend>
                         <div class="flex items-center">
-                            <select wire:model.live='category' class="select flex-grow">
+                            <select wire:model.live.debounce.500ms='category' class="select flex-grow">
                                 <option value="0">Choose a Session</option>
                                 @foreach ($uniqCategories as $item)
                                 <option value="{{ $item }}">{{ $item }}</option>
@@ -97,15 +97,22 @@
             </div>
 
             <div class="w-full lg:w-3/4 order-2 lg:order-1">
-                @foreach ($uniqDates as $date)
+                @foreach ($uniqDates->sort() as $date)
                 <div class="text-center lg:text-start border-t border-dashed pt-2">
                     <h2 class="text-lg font-semibold uppercase text-success tracking-wider">
                         {{\Carbon\Carbon::parse($date)->format('l, d F')}}
                     </h2>
                 </div>
                 @foreach ($uniqCategories as $item)
+                @if (
+                    !($date == '2026-04-15' && ($item == 'Symposium' ||  $item == 'Workshop' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'Master Class' )) && 
+                    !($date == '2026-04-16' && ($item == 'Live Surgery' || $item == 'Master Class' )) && 
+                    !($date == '2026-04-17' && ($item == 'Workshop' || $item == 'Live Surgery')) && 
+                    !($date == '2026-04-18' && ($item == 'Workshop' || $item == 'Live Surgery' || $item == 'Master Course'))
+                )
                 <p class="font-semibold tracking-wider my-5"><i
                         class="fa fa-angle-right text-sm text-green-700 font-semibold"></i> {{$item}}</p>
+                @endif
                 @foreach ($atglances as $atglance)
                 @if ($atglance->category_sesi == $item && $atglance->date == $date)
 
