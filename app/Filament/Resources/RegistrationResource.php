@@ -35,6 +35,7 @@ class RegistrationResource extends Resource
                         'Symposium Local & Member (WSRM & IMC)' => 'Symposium Local & Member (WSRM & IMC)',
                         'Symposium Overseas Non Member' => 'Symposium Overseas Non Member',
                         'Workshop' => 'Workshop',
+                        'Master Course' => 'Master Course',
                     ])
                     ->native(false),
                 Select::make('wilayah_reg')

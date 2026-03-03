@@ -105,7 +105,7 @@
                 </div>
                 @foreach ($uniqCategories as $item)
                 @if (
-                    !($date == '2026-04-15' && ($item == 'Symposium' ||  $item == 'Workshop' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'Master Class' )) && 
+                    !($date == '2026-04-15' && ($item == 'Symposium' ||  $item == 'Workshop' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'Master Course' )) && 
                     !($date == '2026-04-16' && ($item == 'Live Surgery' || $item == 'Master Class' )) && 
                     !($date == '2026-04-17' && ($item == 'Workshop' || $item == 'Live Surgery')) && 
                     !($date == '2026-04-18' && ($item == 'Workshop' || $item == 'Live Surgery' || $item == 'Master Course'))

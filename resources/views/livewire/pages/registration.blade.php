@@ -108,6 +108,50 @@
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
                     </div>
+                    @elseif ($category == 'Workshop')
+                    <h2 class="uppercase font-semibold text-[#0A3542] mb-2 mt-5">{{$category}}</h2>
+                    <div class="relative overflow-x-auto shadow sm:rounded-lg ">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class=" text-white uppercase text-center bg-green-900 ">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        Category
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Registration Fee
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-start">
+                                        Details
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($regLocals as $regLocal)
+                                @if ($regLocal->category_reg == $category)
+                                <tr class="bg-white border-b  border-gray-200 hover:bg-green-50 ">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                        {{$regLocal->title}}
+                                    </th>
+                                    <td class="px-6 py-4 text-center">
+                                        {{$regLocal->early_bird_reg != 0 ? 'IDR ' . number_format($regLocal->early_bird_reg,
+                                        0, ',', '.') : ''}}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
+                                    </td>
+
+                                </tr>
+                                @endif
+                                @endforeach
+                            </tbody>
+                        </table>
+                        <div class="relative mt-2">
+                            <a href="https://expo.virconex-id.com/registration/apfsrm2026/"
+                                class="bg-green-600 text-white hover:bg-green-800 p-3 rounded-xl mb-3 float-end"><i
+                                    class="fa-solid fa-list mx-3"></i>Register Now!</a>
+                        </div>
+                    </div>
                     @else
                     <h2 class="uppercase font-semibold text-[#0A3542] mb-2 mt-5">{{$category}}</h2>
                     <div class="relative overflow-x-auto shadow sm:rounded-lg ">
