@@ -26,7 +26,7 @@
                             <tr>
                                 <td style="vertical-align: top">
                                     @foreach ($limabelas as $siloam)
-                                    @if ($siloam->room == 'RS')
+                                    @if ($siloam->room == 'Siloam Hospital Bali')
 
                                     <a href="#modal_{{$siloam->id}}">
                                         <div
@@ -116,7 +116,7 @@
                             <tr>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $plenary)
-                                    @if ($plenary->room == 'Plenary Hall')
+                                    @if ($plenary->room == 'Pecatu 1 & 2')
 
                                     <a href="#modal_{{$plenary->id}}">
                                         <div
@@ -186,7 +186,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room1)
-                                    @if ($room1->room == 'Room 1')
+                                    @if ($room1->room == 'Mengwi 1')
 
                                     <a href="#modal_{{$room1->id}}">
                                         <div
@@ -256,7 +256,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room2)
-                                    @if ($room2->room == 'Room 2')
+                                    @if ($room2->room == 'Mengwi 2')
 
                                     <a href="#modal_{{$room2->id}}">
                                         <div
@@ -326,7 +326,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room3)
-                                    @if ($room3->room == 'Room 3')
+                                    @if ($room3->room == 'Mengwi 3')
 
                                     <a href="#modal_{{$room3->id}}">
                                         <div
@@ -397,7 +397,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room4)
-                                    @if ($room4->room == 'Room 4')
+                                    @if ($room4->room == 'Mengwi 5')
 
                                     <a href="#modal_{{$room4->id}}">
                                         <div
@@ -468,7 +468,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room5)
-                                    @if ($room5->room == 'Room 5')
+                                    @if ($room5->room == 'Mengwi 6')
 
                                     <a href="#modal_{{$room5->id}}">
                                         <div
@@ -539,7 +539,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room6)
-                                    @if ($room6->room == 'Room 6')
+                                    @if ($room6->room == 'Mengwi 7')
 
                                     <a href="#modal_{{$room6->id}}">
                                         <div
@@ -610,7 +610,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room7)
-                                    @if ($room7->room == 'Room 7')
+                                    @if ($room7->room == 'Mengwi 8')
 
                                     <a href="#modal_{{$room7->id}}">
                                         <div
@@ -697,17 +697,17 @@
                                 <th colspan="4" class="text-center bg-base-200">CONFERENCE DAY 2</th>
                             </tr>
                             <tr class="text-green-600 bg-base-200 text-xs">
-                                <th style="width: 25%;" class="text-center">Plenary Hall</th>
-                                <th style="width: 25%;" class="text-center">Room 1</th>
-                                <th style="width: 25%;" class="text-center">Room 2</th>
-                                <th style="width: 25%;" class="text-center">Room 3</th>
+                                <th style="width: 25%;" class="text-center">Pecatu 1 & 2</th>
+                                <th style="width: 25%;" class="text-center">Mengwi 1</th>
+                                <th style="width: 25%;" class="text-center">Mengwi 2</th>
+                                <th style="width: 25%;" class="text-center">Mengwi 6</th>
                             </tr>
                         </thead>
                         <tbody class="text-sm">
                             <tr>
                                 <td style="vertical-align: top">
                                     @foreach ($tujuhbelas as $plenary2)
-                                    @if ($plenary2->room == 'Plenary Hall')
+                                    @if ($plenary2->room == 'Pecatu 1 & 2')
 
                                     <a href="#modal_{{$plenary2->id}}">
                                         <div
@@ -778,7 +778,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($tujuhbelas as $roomone2)
-                                    @if ($roomone2->room == 'Room 1')
+                                    @if ($roomone2->room == 'Mengwi 1')
 
                                     <a href="#modal_{{$roomone2->id}}">
                                         <div
@@ -849,7 +849,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($tujuhbelas as $roomtwo2)
-                                    @if ($roomtwo2->room == 'Room 2')
+                                    @if ($roomtwo2->room == 'Mengwi 2')
 
                                     <a href="#modal_{{$roomtwo2->id}}">
                                         <div
@@ -920,7 +920,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($tujuhbelas as $roomthree2)
-                                    @if ($roomthree2->room == 'Room 3')
+                                    @if ($roomthree2->room == 'Mengwi 6')
 
                                     <a href="#modal_{{$roomthree2->id}}">
                                         <div
@@ -1008,17 +1008,17 @@
                                 <th colspan="4" class="text-center bg-base-200">CONFERENCE DAY 3</th>
                             </tr>
                             <tr class="text-green-600 bg-base-200 text-xs">
-                                <th style="width: 25%;" class="text-center">Plenary Hall</th>
-                                <th style="width: 25%;" class="text-center">Room 1</th>
-                                <th style="width: 25%;" class="text-center">Room 2</th>
-                                <th style="width: 25%;" class="text-center">Room 3</th>
+                                <th style="width: 25%;" class="text-center">Pecatu 1 & 2</th>
+                                <th style="width: 25%;" class="text-center">Mengwi 1</th>
+                                <th style="width: 25%;" class="text-center">Mengwi 2</th>
+                                <th style="width: 25%;" class="text-center">Mengwi 6</th>
                             </tr>
                         </thead>
                         <tbody class="text-sm">
                             <tr>
                                 <td style="vertical-align: top">
                                     @foreach ($delapanbelas as $plenary3)
-                                    @if ($plenary3->room == 'Plenary Hall')
+                                    @if ($plenary3->room == 'Pecatu 1 & 2')
 
                                     <a href="#modal_{{$plenary3->id}}">
                                         <div
@@ -1090,7 +1090,7 @@
 
                                 <td style="vertical-align: top">
                                     @foreach ($delapanbelas as $roomone3)
-                                    @if ($roomone3->room == 'Room 1')
+                                    @if ($roomone3->room == 'Mengwi 1')
 
                                     <a href="#modal_{{$roomone3->id}}">
                                         <div
@@ -1161,7 +1161,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($delapanbelas as $roomtwo3)
-                                    @if ($roomtwo3->room == 'Room 2')
+                                    @if ($roomtwo3->room == 'Mengwi 2')
 
                                     <a href="#modal_{{$roomtwo3->id}}">
                                         <div
@@ -1232,7 +1232,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($delapanbelas as $roomthree3)
-                                    @if ($roomthree3->room == 'Room 3')
+                                    @if ($roomthree3->room == 'Mengwi 6')
 
                                     <a href="#modal_{{$roomthree3->id}}">
                                         <div

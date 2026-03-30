@@ -62,6 +62,15 @@ class ScheduleSessionResource extends Resource
                         'Room 6' => 'Room 6',
                         'Room 7' => 'Room 7',
                         'RS' => 'RS',
+                        'Siloam Hospital Bali' => 'Siloam Hospital Bali',
+                        'Pecatu 1 & 2' => 'Pecatu 1 & 2',
+                        'Mengwi 1' => 'Mengwi 1',
+                        'Mengwi 2' => 'Mengwi 2',
+                        'Mengwi 3' => 'Mengwi 3',
+                        'Mengwi 5' => 'Mengwi 5',
+                        'Mengwi 6' => 'Mengwi 6',
+                        'Mengwi 7' => 'Mengwi 7',
+                        'Mengwi 8' => 'Mengwi 8',
                     ])
                     ->searchable()
                     ->required()

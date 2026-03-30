@@ -68,4 +68,8 @@
             @endforeach
         </div>
     </section>
+
+    <section class="pt-10 pb-24 px-2 lg:px-5">
+        <livewire:section.transportation />
+    </section>
 </div>
