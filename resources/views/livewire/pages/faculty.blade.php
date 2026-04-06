@@ -51,7 +51,7 @@
                                             class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
                                     <div class="flex items-center gap-3 pb-3">
-                                        <img class="rounded-full bg-green-300/20 shslatext-slate-900w-20 object-cover"
+                                        <img class="rounded-full bg-green-300/20 text-slate-900 w-20 object-cover"
                                             src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                             assets/images/speaker.png"}}" alt="{{$indo->name}}">
                                         <div>
