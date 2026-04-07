@@ -100,7 +100,7 @@
                         aria-label="Foreign faculties" />
                     <div class="tab-content border-base-300 bg-emerald-50 p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div class="card bg-base-100 shadow-sm ">
                                 <figure class="relative">
@@ -117,7 +117,7 @@
                                         class="text-xl font-semibold text-green-600 hover:cursor-pointer hover:text-[#0a3542]">
                                         {{$foreign->name}}
                                     </h2>
-                                    <p>{{$foreign->country}}</p>
+                                    <p>{{$foreign->description}}</p>
                                 </div>
                             </div>
 
