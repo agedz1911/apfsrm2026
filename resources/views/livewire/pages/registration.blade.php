@@ -6,7 +6,29 @@
         </div>
     </section>
 
-    <section class="pt-10 pb-24 px-2 lg:px-5 bg-competition">
+    <section class="pb-5 pt-2 lg:px-5 px-1">
+        <div class="text-gray-500 text-sm text-justify">
+            <p class="font-semibold uppercase text-black text-lg">IMPORTANT ANNOUNCEMENT</p>
+            <p>Please be advised of an important update regarding the upcoming session, "Surgical intervention for dementia: analyzing the efficacy and safety of dcLVA," scheduled for the APFSRM Congress in Bali.</p>
+            <p>Due to unforeseen circumstances, the format of this session has been changed from a Live Surgery to a specialized Course Program. The program will be delivered by the same distinguished faculty members and will cover the same critical clinical content.
+                To ensure no disruption to participant schedules, the date, time, and venue remain unchanged:</p>
+            <ul class="list-disc list-inside ml-5">
+                <li> Date: Wednesday, April 15th, 2026 </li>
+                <li> Time: 08:00 – Finish </li>
+                <li> Location: Mengwi Room, BNDCC 2 </li>
+            </ul>
+            <p>Revised Registration Fee
+                In recognition of this change in program format, the registration fee has been reduced to USD 250.</p>
+            <ul>
+                <li>* New Registrants: You may now register for this session at the updated rate of USD 250.</li>
+                <li>* Existing Registrants: You will receive a refund for the balance of your original payment. You will be contacted via email to confirm your preferred refund method.</li>
+            </ul>
+            <p>We appreciate your understanding and look forward to an insightful session in Bali. <br>
+APFSRM Organizing Committee</p>
+        </div>
+    </section>
+
+    <section class="pt-6 pb-24 px-2 lg:px-5 bg-competition">
         <!-- name of each tab group should be unique -->
         <div class="tabs tabs-border justify-evenly">
             <input type="radio" name="my_tabs_2" class="tab text-lg uppercase text-green-700"
@@ -288,7 +310,7 @@
                                         {{$regForeign->title}}
                                     </th>
                                     <td class="px-6 py-4 text-center">
-                                        {{$regForeign->early_bird_reg != 0 ? 'IDR ' . number_format($regForeign->early_bird_reg,
+                                        {{$regForeign->early_bird_reg != 0 ? 'USD ' . number_format($regForeign->early_bird_reg,
                                         0, ',', '.') : ''}}
                                     </td>
                                     <td class="px-6 py-4">

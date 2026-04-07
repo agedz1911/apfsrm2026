@@ -18,7 +18,7 @@
                         <!-- head -->
                         <thead>
                             <tr>
-                                <th  class="text-center bg-base-200">Live Surgery Workshop</th>
+                                <th  class="text-center bg-base-200">Workshop</th>
                             </tr>
                             
                         </thead>
