@@ -53,16 +53,7 @@ class ScheduleSessionResource extends Resource
                 TextInput::make('time'),
                 Select::make('room')
                     ->options([
-                        'Plenary Hall' => 'Plenary Hall',
-                        'Room 1' => 'Room 1',
-                        'Room 2' => 'Room 2',
-                        'Room 3' => 'Room 3',
-                        'Room 4' => 'Room 4',
-                        'Room 5' => 'Room 5',
-                        'Room 6' => 'Room 6',
-                        'Room 7' => 'Room 7',
-                        'RS' => 'RS',
-                        'Siloam Hospital Bali' => 'Siloam Hospital Bali',
+                        
                         'Pecatu 1 & 2' => 'Pecatu 1 & 2',
                         'Mengwi 1' => 'Mengwi 1',
                         'Mengwi 2' => 'Mengwi 2',
@@ -70,7 +61,8 @@ class ScheduleSessionResource extends Resource
                         'Mengwi 5' => 'Mengwi 5',
                         'Mengwi 6' => 'Mengwi 6',
                         'Mengwi 7' => 'Mengwi 7',
-                        'Mengwi 8' => 'Mengwi 8',
+                        'Mengwi 3 & 5' => 'Mengwi 3 & 5',
+                        'Legian 6' => 'Legian 6',
                     ])
                     ->searchable()
                     ->required()
