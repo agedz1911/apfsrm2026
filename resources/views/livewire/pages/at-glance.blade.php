@@ -166,7 +166,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room2)
-                                    @if ($room2->room == 'Mengwi 1')
+                                    @if ($room2->room == 'Mengwi 1 & 2')
 
                                     <a href="#modal_{{$room2->id}}">
                                         <div
@@ -236,7 +236,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room3)
-                                    @if ($room3->room == 'Mengwi 2')
+                                    @if ($room3->room == 'Mengwi 6')
 
                                     <a href="#modal_{{$room3->id}}">
                                         <div
@@ -307,7 +307,7 @@
                                 </td>
                                 <td style="vertical-align: top">
                                     @foreach ($enambelas as $room4)
-                                    @if ($room4->room == 'Mengwi 6')
+                                    @if ($room4->room == 'Legian 1')
 
                                     <a href="#modal_{{$room4->id}}">
                                         <div
